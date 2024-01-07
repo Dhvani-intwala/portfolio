@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Poppins:ital,wght@1,700&display=swap');
+
+/********* GENERAL STYLES  *******/
+
+:root {
+    --interactive-color: rgb(252, 4, 157);
+    --grey-color: rgb(175, 159, 159);
+    --black-color: rgb(6, 6, 6);
+    --white-color: rgb(255, 255, 255);
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white-color);
+    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+}
+  
+*{
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    overflow-x: hidden;
+}
+.bg{
+    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+}
+
+.button{
+    background: linear-gradient(to right, #074082, #3f0952);
+}
+
+/********* NAV STYLES  *******/
+
+header{
+    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+    position: relative;
+    margin: 10px;
+}
+
+.logo{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+ul li a{
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+.title {
+    font-size: 30px;
+	margin: 0 0 30px;
+	color: #ffffff;
+	line-height: 42px;
+	display: inline-block;
+	border-bottom: 2px solid #ffffff;
+}
+
+/********* HOME PAGE STYLES  *******/
+
+
+.img-fluid{
+    width: 18vw;
+    height: 33vh;
+}
+
+.fa{
+    color: var(--white-color);
+    margin-left: 20px;
+}
+
+.Portfolio{
+    color: var(--white-color);
+    font-size: 1.1rem;
+    border: var(--white-color) 1px solid;
+    border-radius: 10px;
+    padding: 5px 30px 5px 30px;
+}
+
+.Portfolio:hover{
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+.text{
+    color: var(--grey-color);
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', serif;
+    color: transparent;
+    background-image: linear-gradient(to right, #f326e5, #3a99fe, rgb(116, 17, 68));
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+}
+
+/* Keyframes */
+@keyframes hue {
+    0% {
+        background-position: 0 1600px;
+    }
+    100% {
+        background-position: 1600px 0;
+    }
+}
+
+/********* ABOUT PAGE STYLES  *******/
+
+.text-color{
+    color: var(--grey-color);
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.about p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.cv-btn{
+    color: var(--white-color);
+    font-size: 1.1rem;
+    border: var(--white-color) 1px solid;
+    border-radius: 10px;
+    padding: 3px 60px;
+    display: block;
+    margin: auto;
+    width: 15vw;
+}
+
+/********* SKILL PAGE STYLES  *******/
+
+.img-skill{
+    width: 6vw;
+    height: 10vh;
+    margin: 10px 10px;
+}
+
+.grid-item{
+    /* box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px; */
+    margin-bottom: 10px;
+}
+
+.html{
+    box-shadow: rgb(229, 72, 24) 0px 5px 5px 2px;
+}
+
+.css{
+    box-shadow: rgb(56, 133, 215) 0px 5px 5px 2px;
+}
+
+.js{
+    box-shadow: rgb(238, 190, 33) 0px 5px 5px 2px;
+}
+
+.python{
+    box-shadow: rgb(37, 106, 123) 0px 5px 5px 2px;
+}
+
+.bootstrap{
+    box-shadow: rgb(145, 33, 237) 0px 5px 5px 2px;
+}
+
+.github{
+    box-shadow: rgb(202, 220, 239) 0px 5px 5px 2px;
+}
+
+/********* PROJECTS PAGE STYLES  *******/
+
+.card{
+    background-color: #47176b;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+.project-img{
+    width: 20vw;
+    height: 28vh;
+    border: #fefeff solid 4px;
+  
+}
+
+
+/********* MEDIA SIZE  *******/
+
+@media (max-width: 380px) {
+
+    .img-fluid{
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+    .text-about{
+        width:100%;
+    }
+
+}
+
+
+
+  
+
+
+
