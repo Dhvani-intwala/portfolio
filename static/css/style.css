@@ -176,10 +176,11 @@ ul li a{
 /********* PROJECTS PAGE STYLES  *******/
 
 .card{
-    background-color: #47176b;
-    position: relative;
-    margin-bottom: 10px;
-    padding: 20px;
+    background-color: #401b5c;
+    padding: 20px 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    border-radius: 60px 0 60px 0;
+
 }
 
 
@@ -187,6 +188,7 @@ ul li a{
     width: 20vw;
     height: 28vh;
     border: #fefeff solid 4px;
+    border-radius: 20px;
   
 }
 
