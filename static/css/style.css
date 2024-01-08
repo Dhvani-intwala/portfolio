@@ -183,15 +183,18 @@ ul li a{
 
 }
 
-
 .project-img{
     width: 20vw;
     height: 28vh;
     border: #fefeff solid 4px;
     border-radius: 20px;
-  
 }
 
+
+.fa-2x:hover
+{
+    color: #282222;
+}
 
 /********* MEDIA SIZE  *******/
 
