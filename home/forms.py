@@ -8,7 +8,7 @@ class ContactForm(forms.ModelForm):
     """
     class Meta:
         model = ContactMessage
-        fields = ('name', 'email', 'phone', 'subject', 'message',)
+        fields = ('name', 'email', 'phone', 'message',)
 
     def __init__(self, *args, **kwargs):
         """
@@ -20,7 +20,6 @@ class ContactForm(forms.ModelForm):
             'name': 'Name',
             'email': 'Email Address',
             'phone': 'phone',
-            'subject': 'subject',
             'message': 'Message',
         }
 

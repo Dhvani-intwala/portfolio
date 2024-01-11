@@ -188,6 +188,7 @@ ul li a{
     height: 28vh;
     border: #fefeff solid 4px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 
