@@ -19,11 +19,11 @@ class ContactForm(forms.ModelForm):
         placeholders = {
             'name': 'Name',
             'email': 'Email Address',
-            'phone': 'phone',
+            'phone': 'Phone Number',
             'message': 'Message',
         }
 
-        self.fields['name'].widget.attrs['autofocus'] = True
+        self.fields['name'].widget.attrs['autofocus'] = False
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
@@ -31,6 +31,6 @@ class ContactForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = ('border-black '
-                                                        'rounded-0 '
+                                                        'rounded-3 '
                                                         'contact-form-input')
             self.fields[field].label = False

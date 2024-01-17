@@ -4,7 +4,14 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 
 # Create your views here.
-def index(request):
+
+# def index(request):
+#     """
+#     """
+#     return render(request, 'home/index.html',{})
+
+
+def contact(request):
     """
     View to return the index page.
     """
@@ -13,7 +20,7 @@ def index(request):
         if form.is_valid:
             form.save()
             messages.success(request, 'Your message has been sent!')
-            return HttpResponseRedirect('/contactus?submitted=True')
+            return HttpResponseRedirect('/contact?submitted=True')
 
         else:
             form = ContactForm()

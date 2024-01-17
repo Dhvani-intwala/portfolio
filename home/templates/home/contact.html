@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block contact %}
+
+<!-- CONTACT PAGE -->
+
+<div class="container contact mb-5" id="contact">
+    <h2 class="title mb-2">Contact Me</h2>
+    <h5 class="overflow-hidden mb-5">Submit the form below to get in touch with me</h5>
+    {% load crispy_forms_tags %}
+    <form action="{% url 'home' %}"  method="POST" id="contact-form">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn Portfolio button center" type="submit">Send message</button>
+    </form>   
+</div>
+{% endblock %}
