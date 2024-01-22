@@ -18,10 +18,12 @@ body {
     background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
 }
   
-*{
+html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding: 5rem;
 }
+
 .bg{
     background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
 }
@@ -35,7 +37,6 @@ body {
 header{
     background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
     position: relative;
-    margin: 10px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -51,10 +52,13 @@ header{
 .navbar-scrolled{
     background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
     color: #010e1d;
+    height: 8%;
+    padding: 5px 5px;
 }
 
 .navbar{
     transition: all 0.5s;
+    padding: 20px 10px;
 }
 
 .logo{
@@ -88,7 +92,9 @@ ul li a{
 }
 
 .home{
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-bottom: 5%;;
+
 }
 
 .fa{
