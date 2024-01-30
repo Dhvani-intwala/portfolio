@@ -3,7 +3,6 @@
 /********* GENERAL STYLES  *******/
 
 :root {
-    --interactive-color: rgb(252, 4, 157);
     --grey-color: rgb(175, 159, 159);
     --black-color: rgb(6, 6, 6);
     --white-color: rgb(255, 255, 255);
@@ -43,11 +42,13 @@ header{
     transition: background 0.3s ease;
 }
 
-.navbar-nav .nav-item.active .nav-link {
+/* .nav-item.active {
     background: linear-gradient(to right, #d004c2, #3a99fe);
     -webkit-background-clip: text;
     color: transparent;
-}
+} */
+
+
 
 .navbar-scrolled{
     background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
@@ -71,7 +72,7 @@ ul li a{
     margin-right: 20px;
 }
 .title {
-    font-size: 30px;
+    font-size: 20px;
 	margin: 0 0 30px;
 	color: #ffffff;
 	line-height: 42px;
@@ -83,19 +84,29 @@ ul li a{
 
 
 .img-fluid{
-    width: 15vw;
-    height: 30vh;
+    width: 17vw;
+    height: 50vh;
+    margin-right: 10px;
+
 }
 
 .text-about p{
-    width: 40vw;
+    width: 30vw;
 }
+
 
 .home{
     margin-top: 12%;
-    margin-bottom: 5%;;
+    margin-bottom: 8%;;
 
 }
+
+.social-icon a{
+    display: flex;
+    margin: 20px 0;
+}
+
+
 
 .fa{
     color: var(--white-color);
@@ -117,7 +128,7 @@ ul li a{
 
 .text{
     color: var(--grey-color);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     overflow: hidden;
 }
 
@@ -140,6 +151,17 @@ ul li a{
         background-position: 1600px 0;
     }
 }
+
+@keyframes animate__backInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-25%);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
 /********* ABOUT PAGE STYLES  *******/
 
 .text-color{
@@ -219,7 +241,7 @@ ul li a{
     height: 27vh;
     border: #fefeff solid 4px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit:fill;
 }
 
 
@@ -269,14 +291,50 @@ ul li a{
     .header{
         margin-bottom: 10px;
     }
-
+    .text-about p{
+        width: 90vw;
+    }
+    .about-line{
+        font-size: 1.5rem;
+    }
+    .navbar-scrolled{
+        height: 11%;
+    }
+    .img-fluid{
+        width: 45vw;
+        height: 30vh;
+    }
+    .button{
+        width: 65%;
+    }
+    #contact-form{
+        width: 80vw;
+        margin: auto;
+    }
+    .img-skill{
+        width: 26vw;
+        height: 10vh;
+    }
+    .project-img{
+        width: 70vw;
+        height: 27vh;
+        object-fit: fill;
+    }
+    .card{
+        width: 80vw;
+        padding: 20px 20px 8px 20px;
+        margin: auto;
+    }   
+    .order-md-1 {
+        order: 2;
+    }
+    .order-md-2 {
+        order: 1; 
+    }
 }
 
 @media (max-width: 767px) {
-    /* Hide testimonials on mobile devices */
-    .carousel {
-        display: block;
-    }
+   
 }
 
 

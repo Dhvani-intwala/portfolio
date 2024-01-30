@@ -5,12 +5,6 @@ from django.contrib import messages
 
 # Create your views here.
 
-# def index(request):
-#     """
-#     """
-#     return render(request, 'home/index.html',{})
-
-
 def contact(request):
     """
     View to return the index page.
@@ -20,7 +14,7 @@ def contact(request):
         if form.is_valid:
             form.save()
             messages.success(request, 'Your message has been sent!')
-            return HttpResponseRedirect('/contact?submitted=True')
+            return HttpResponseRedirect('/home/index?submitted=True')
 
         else:
             form = ContactForm()

@@ -8,3 +8,17 @@ window.addEventListener('scroll', () =>{
         nav.classList.remove('navbar-scrolled');
     }
 });
+
+// Nav bar active class
+
+
+const header = document.getElementById("navbarSupportedContent");
+const btns = header.getElementsByClassName("nav-link");
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].classList.remove("active");
+        this.classList.add("active");
+        console.log(current[1])
+    });
+}
