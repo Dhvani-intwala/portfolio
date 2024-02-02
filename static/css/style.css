@@ -55,6 +55,7 @@ header{
     color: #010e1d;
     height: 8%;
     padding: 5px 5px;
+    z-index: 1000;
 }
 
 .navbar{
@@ -276,6 +277,9 @@ ul li a{
 
 @media (max-width: 380px) {
 
+    html {
+        overflow-x: hidden;
+    }
     .img-fluid{
         width: 40vw;
         height: 20vh;
@@ -330,6 +334,29 @@ ul li a{
     }
     .order-md-2 {
         order: 1; 
+    }
+    
+    #nav.navbar {
+        width: 100%;
+    }
+    #main-nav {
+        background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+        width: 100%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        height: calc(100% - 100px);
+        overflow-y: auto;
+    }
+
+    #main-nav a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 25px;
+    }
+
+      #main-nav a:hover {
+        color: #555; /* Change the hover text color as needed */
     }
 }
 

@@ -9,4 +9,4 @@ class ContactMessage(models.Model):
     message = models.TextField(max_length=255)
 
     def __str__(self):
-        return f"{self.name} - {self.subject}"
+        return f"{self.name} - {self.message}"
