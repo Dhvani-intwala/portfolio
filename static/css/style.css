@@ -109,9 +109,11 @@ ul li a{
 
 
 
-.fa{
+a .icon{
     color: var(--white-color);
     margin-left: 20px;
+    font-size: 30px;
+    
 }
 
 .Portfolio{
