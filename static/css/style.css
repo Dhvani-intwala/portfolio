@@ -287,6 +287,12 @@ a .icon{
         height: 20vh;
         margin-top: 70px;
     }
+    .order-md-1 {
+        order: 2;
+    }
+    .order-md-2 {
+        order: 1; 
+    }
 
     .name{
         font-size: 2rem;
@@ -330,14 +336,7 @@ a .icon{
         width: 80vw;
         padding: 20px 20px 8px 20px;
         margin: auto;
-    }   
-    .order-md-1 {
-        order: 2;
     }
-    .order-md-2 {
-        order: 1; 
-    }
-    
     #nav.navbar {
         width: 100%;
     }
@@ -349,7 +348,6 @@ a .icon{
         height: calc(100% - 100px);
         overflow-y: auto;
     }
-
     #main-nav a {
         color: #ffffff;
         font-size: 1.5rem;
@@ -358,7 +356,7 @@ a .icon{
     }
 
       #main-nav a:hover {
-        color: #555; /* Change the hover text color as needed */
+        color: #555; 
     }
 }
 
