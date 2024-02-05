@@ -291,7 +291,7 @@ a .icon{
         order: 2;
     }
     .order-md-2 {
-        order: 1; 
+        order: 1;
     }
 
     .name{
@@ -362,21 +362,21 @@ a .icon{
 
 @media (max-width: 768px) {
     .img-fluid{
-        width: 60vw;
-        height: 20vh;
+        width: 50vw;
+        height: 40vh;
         margin-top: 100px;
     }
     .order-md-1 {
-        order: 1;
+        order: 2;
     }
     .order-md-2 {
-        order: 2; 
+        order: 1; 
     }
     .text-about p{
-        width:50vw !important;
+        width:100vw !important;
     }
     .button{
-        width: 40%;
+        width: 70%;
     }
     #contact-form{
         width: 60vw;
