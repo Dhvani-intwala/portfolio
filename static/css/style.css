@@ -400,6 +400,7 @@ div  {
     }
     #nav.navbar {
         width: 100%;
+        height: auto;
     }
     #main-nav {
         background: linear-gradient(to right, #021123, rgb(24, 13, 28));
@@ -439,10 +440,7 @@ div  {
         width: 60vw;
         margin: auto;
     }
-    .navbar{
-        height: 10%;
-        padding: 0 !important;
-    }
+   
     
      
 }
