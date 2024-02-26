@@ -174,7 +174,7 @@ div  {
   top: 0;
   
 }
-
+/* 
 .home .show-animate .animate{
     animation: fadeUp 2s ease forwards;
 }
@@ -202,7 +202,7 @@ div  {
         opacity: 0;
         transform: translateY(0);
     }
-}
+} */
 
 /********* ABOUT PAGE STYLES  *******/
 
@@ -226,7 +226,7 @@ div  {
     font-size: 1.1rem;
     border: var(--white-color) 1px solid;
     border-radius: 10px;
-    padding: 3px 60px;
+    padding: 5px 5px 5px 5px;
     display: block;
     margin: auto;
     width: 15vw;
@@ -329,18 +329,22 @@ div  {
 .contact-form-input{
     background-color: #010e1d;
 }
+.contact-btn{
+    color: var(--white-color);
+    font-size: 1.1rem;
+    border: var(--white-color) 1px solid;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    width: 15vw;
+    text-align: center;
+}
 
 /********* MEDIA SIZE  *******/
 
-@media (max-width: 380px) {
+@media (max-width: 600px) {
 
-    html {
+    *{
         overflow-x: hidden;
-    }
-    .img-fluid{
-        width: 80vw;
-        height: 10vh;
-        margin-top: 70px;
     }
     .order-md-1 {
         order: 2;
@@ -361,6 +365,10 @@ div  {
     .text-about p{
         width: 90vw;
     }
+    .about p{
+        display: block;
+        margin: auto;
+    }
     .about-line{
         font-size: 1.5rem;
     }
@@ -370,9 +378,7 @@ div  {
     .img-fluid{
         width: 45vw;
         height: 30vh;
-    }
-    .button{
-        width: 65%;
+        margin-top: 15%;
     }
     #contact-form{
         width: 80vw;
@@ -410,27 +416,24 @@ div  {
     #main-nav a:hover {
         color: #555; 
     }
-    .navbar-scrolled{
-        margin-top: 15%;
+    .Portfolio{
+        width:50%;
     }
-
+    .cv-btn{
+        width: 90%;
+    }
+    .contact-btn{
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
     
-    .img-fluid{
-        width: 40vw;
-        height: 50vh;
-        margin-top: 100px;
-    }
     .order-md-1 {
         order: 2;
     }
     .order-md-2 {
         order: 1; 
-    }
-    .button{
-        width: 70%;
     }
     #contact-form{
         width: 60vw;
@@ -440,9 +443,7 @@ div  {
         height: 10%;
         padding: 0 !important;
     }
-    .navbar-scrolled{
-        margin-top: 5%;
-    }
+    
      
 }
 
