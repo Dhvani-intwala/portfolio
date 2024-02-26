@@ -25,39 +25,3 @@ for (let i = 0; i < btns.length; i++) {
     });
 }
 
-
-// animations
-
-const divs = document.querySelectorAll('div');
-
-function handleScroll() {
-    divs.forEach(sec => {
-        const offset = sec.offsetTop;
-  
-        const height = sec.offsetHeight;
-
-        const top = window.scrollY; 
-        // Check if the current scroll position is within the section
-        if (top >= offset && top < offset + height) {
-            // Add the show-animate class if the section is in view
-            sec.classList.add('show-animate');
-        } else {
-            // Remove the show-animate class if the section is not in view
-            sec.classList.remove('show-animate');
-        }
-    });
-}
-window.addEventListener('scroll', handleScroll);
-handleScroll();
-
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:4, 
-  // items change number for slider display on desktop
-  
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true
-});

@@ -338,8 +338,8 @@ div  {
         overflow-x: hidden;
     }
     .img-fluid{
-        width: 40vw;
-        height: 20vh;
+        width: 80vw;
+        height: 10vh;
         margin-top: 70px;
     }
     .order-md-1 {
@@ -396,23 +396,24 @@ div  {
         width: 100%;
     }
     #main-nav {
-        background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+        background: linear-gradient(to right, #021123, rgb(24, 13, 28));
         width: 100%;
-        margin-top: 70px;
-        margin-bottom: 70px;
-        height: calc(100% - 100px);
+        height: auto;
         overflow-y: auto;
     }
     #main-nav a {
         color: #ffffff;
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 25px;
+        font-size: 1.2rem;
+        margin-left: 5%;
     }
 
     #main-nav a:hover {
         color: #555; 
     }
+    .navbar-scrolled{
+        margin-top: 15%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -427,9 +428,6 @@ div  {
     }
     .order-md-2 {
         order: 1; 
-    }
-    .text-about p{
-        width:60vw !important;
     }
     .button{
         width: 70%;
