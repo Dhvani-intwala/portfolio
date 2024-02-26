@@ -317,6 +317,8 @@ div  {
 
     *{
         overflow-x: hidden;
+    }
+    html{
         scroll-padding: 5rem;
     }
     .order-md-1 {
