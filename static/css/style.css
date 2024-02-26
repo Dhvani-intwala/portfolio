@@ -85,9 +85,10 @@ ul li a{
 
 
 .img-fluid{
-    width: 17vw;
-    height: 50vh;
+    width: 20vw;
+    height: 45vh;
     margin-right: 10px;
+    object-fit: fill;
 
 }
 
@@ -105,14 +106,15 @@ ul li a{
 .social-icon a{
     display: flex;
     margin: 20px 0;
+    color: var(--white-color);
 }
 
 
 
 a .icon{
-    color: var(--white-color);
     margin-left: 20px;
     font-size: 30px;
+    color: var(--white-color);
     
 }
 
@@ -164,7 +166,44 @@ a .icon{
       opacity: 1;
       transform: none;
     }
-  }
+}
+
+div  {
+    height: 100%;
+  width: 100%;
+  top: 0;
+  
+}
+
+.home .show-animate .animate{
+    animation: fadeUp 2s ease forwards;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about .show-animate .animate {
+    animation: slideInUp 1s ease forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
 /********* ABOUT PAGE STYLES  *******/
 
 .text-color{
@@ -226,34 +265,50 @@ a .icon{
     box-shadow: rgb(145, 33, 237) 0px 5px 5px 2px;
 }
 
-.github{
-    box-shadow: rgb(202, 220, 239) 0px 5px 5px 2px;
+.django{
+    box-shadow: rgb(27, 58, 41) 0px 5px 5px 2px;
+}
+.react{
+    box-shadow: rgb(79, 152, 230) 0px 5px 5px 2px;
 }
 
 /********* PROJECTS PAGE STYLES  *******/
 
 .card{
-    background-color: #401b5c;
-    padding: 20px 20px 8px 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-    border-radius: 60px 0 60px 0;
+    background-color: #20153d;
+    /* padding: 20px 20px 8px 20px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+    /* border-radius: 60px 0 60px 0; */
+    /* box-shadow: 0 0 2px #dadfd3; */
+    width: 90%;
+
+}
+.card:hover{
+    background: #171634;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 10px 0px;
 }
 
 .project-img{
-    width: 19vw;
-    height: 27vh;
-    border: #fefeff solid 4px;
-    border-radius: 20px;
+    width: 20vw;
+    height: 23vh;
+    /* border: #fefeff solid 4px; */
+    border-radius: 5px;
     object-fit:fill;
+    transition: transform .1s; 
 }
 
-
-.fa-2x:hover
-{
-    color: #282222;
+.project-img:hover{
+    transform: scale(1.1);
 }
 
-
+.icon-img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
 
 /********* CONTACT PAGE STYLES  *******/
 
@@ -277,7 +332,7 @@ a .icon{
 
 /********* MEDIA SIZE  *******/
 
-@media (max-width: 430px) {
+@media (max-width: 380px) {
 
     html {
         overflow-x: hidden;
@@ -355,15 +410,16 @@ a .icon{
         padding: 25px;
     }
 
-      #main-nav a:hover {
+    #main-nav a:hover {
         color: #555; 
     }
 }
 
 @media (max-width: 768px) {
+    
     .img-fluid{
-        width: 50vw;
-        height: 40vh;
+        width: 40vw;
+        height: 50vh;
         margin-top: 100px;
     }
     .order-md-1 {
@@ -373,7 +429,7 @@ a .icon{
         order: 1; 
     }
     .text-about p{
-        width:100vw !important;
+        width:60vw !important;
     }
     .button{
         width: 70%;
@@ -382,7 +438,14 @@ a .icon{
         width: 60vw;
         margin: auto;
     }
-    
+    .navbar{
+        height: 10%;
+        padding: 0 !important;
+    }
+    .navbar-scrolled{
+        margin-top: 5%;
+    }
+     
 }
 
 
