@@ -174,35 +174,7 @@ div  {
   top: 0;
   
 }
-/* 
-.home .show-animate .animate{
-    animation: fadeUp 2s ease forwards;
-}
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.about .show-animate .animate {
-    animation: slideInUp 1s ease forwards;
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 1;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(0);
-    }
-} */
 
 /********* ABOUT PAGE STYLES  *******/
 
@@ -345,6 +317,7 @@ div  {
 
     *{
         overflow-x: hidden;
+        scroll-padding: 5rem;
     }
     .order-md-1 {
         order: 2;
