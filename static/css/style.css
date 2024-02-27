@@ -110,7 +110,9 @@ ul li a{
 .icon{
     color: var(--white-color);
     margin-top: 2px;
-    
+}
+.icon:hover{
+    color: var(--grey-color);
 }
 
 .Portfolio{
@@ -280,6 +282,10 @@ div  {
     height: 20px;
     object-fit: cover;
 }
+.project-text{
+    width:75vw;
+    text-align: justify;
+}
 
 /********* CONTACT PAGE STYLES  *******/
 
@@ -407,6 +413,9 @@ div  {
     }
     .contact-btn{
         width: 80%;
+    }
+    .project-text{
+        width: 100%;
     }
 }
 
