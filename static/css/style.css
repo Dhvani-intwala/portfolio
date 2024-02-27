@@ -31,6 +31,10 @@ html{
     background: linear-gradient(to right, #074082, #3f0952);
 }
 
+.container{
+    width:100%;
+}
+
 /********* NAV STYLES  *******/
 
 header{
@@ -103,27 +107,20 @@ ul li a{
 
 }
 
-.social-icon a{
-    display: flex;
-    margin: 20px 0;
+.icon{
     color: var(--white-color);
-}
-
-
-
-a .icon{
-    margin-left: 20px;
-    font-size: 30px;
-    color: var(--white-color);
+    margin-top: 2px;
     
 }
 
 .Portfolio{
     color: var(--white-color);
     font-size: 1.1rem;
+    width: 50%;
     border: var(--white-color) 1px solid;
     border-radius: 10px;
-    padding: 5px 30px 5px 30px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
 }
 
 .Portfolio:hover{
@@ -264,8 +261,10 @@ div  {
 }
 
 .project-img{
-    width: 20vw;
+    width: 18vw;
     height: 23vh;
+    margin: 5px auto;
+    display: block;
     /* border: #fefeff solid 4px; */
     border-radius: 5px;
     object-fit:fill;
@@ -400,7 +399,8 @@ div  {
         color: #555; 
     }
     .Portfolio{
-        width:50%;
+        width:100%;
+
     }
     .cv-btn{
         width: 90%;
