@@ -311,6 +311,10 @@ div  {
     text-align: center;
 }
 
+.contact-btn:hover{
+    color: var(--grey-color);
+}
+
 /********* MEDIA SIZE  *******/
 
 @media (max-width: 600px) {
@@ -318,7 +322,7 @@ div  {
     *{
         overflow-x: hidden;
     }
-    html{
+    html {
         scroll-padding: 5rem;
     }
     .order-md-1 {
@@ -338,9 +342,12 @@ div  {
         margin-bottom: 10px;
     }
     .text-about p{
-        width: 90vw;
+        width: 85vw;
+        text-align: justify;
+    
     }
     .about p{
+        width: 85vw;
         display: block;
         margin: auto;
     }
@@ -376,11 +383,11 @@ div  {
     #nav.navbar {
         width: 100%;
         height: auto;
+        padding: 0 !important;
     }
     #main-nav {
         background: linear-gradient(to right, #021123, rgb(24, 13, 28));
         width: 100%;
-        height: auto;
         overflow-y: auto;
     }
     #main-nav a {
