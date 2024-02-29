@@ -30,7 +30,7 @@
     <!-- nav bar -->
     <header id="header">
       <nav class="navbar navbar-expand-lg navbar-dark w-100 fixed-top bg" id="nav">
-        <a class="navbar-brand logo" href="{% url 'home' %}">Dhvani <span>Intwala</span></a>
+        <a class="navbar-brand logo" href="{% url 'home' %}"><span class="name">Dhvani </span>Intwala</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,6 +63,8 @@
 
     {% block content %}
     {% endblock %}
+
+   
     
 
     {% block postloadjs %}

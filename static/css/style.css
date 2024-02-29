@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@1&family=Poppins:ital,wght@1,700&family=Satisfy&display=swap');
 
 /********* GENERAL STYLES  *******/
 
@@ -6,6 +8,7 @@
     --grey-color: rgb(175, 159, 159);
     --black-color: rgb(6, 6, 6);
     --white-color: rgb(255, 255, 255);
+    --pink--color: rgb(160, 7, 114);
 }
   
 body {
@@ -14,7 +17,7 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     color: var(--white-color);
-    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+    background-color:#000000;
 }
   
 html{
@@ -24,21 +27,18 @@ html{
 }
 
 .bg{
-    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+    background-color: #000000;
 }
 
-.button{
-    background: linear-gradient(to right, #074082, #3f0952);
-}
 
 .container{
     width:100%;
+    height: 100%;
 }
 
 /********* NAV STYLES  *******/
 
 header{
-    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
     position: relative;
 }
 
@@ -46,30 +46,23 @@ header{
     transition: background 0.3s ease;
 }
 
-/* .nav-item.active {
+/* .nav-item:active {
     background: linear-gradient(to right, #d004c2, #3a99fe);
     -webkit-background-clip: text;
     color: transparent;
 } */
 
-
-
 .navbar-scrolled{
-    background: linear-gradient(to right, #010e1d, rgb(27, 12, 33));
+    background-color: #000000;
     color: #010e1d;
-    height: 8%;
+    height: 10%;
     padding: 5px 5px;
     z-index: 1000;
 }
 
 .navbar{
     transition: all 0.5s;
-    padding: 20px 10px;
-}
-
-.logo{
-    font-size: 2rem;
-    margin-left: 20px;
+    padding: 20px 180px 10px 180px;
 }
 
 ul li a{
@@ -77,58 +70,73 @@ ul li a{
     margin-right: 20px;
 }
 .title {
-    font-size: 20px;
-	margin: 0 0 30px;
+    font-size: 35px;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--pink--color);
+	/* margin: 0 0 30px;
 	color: #ffffff;
 	line-height: 42px;
 	display: inline-block;
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff; */
+    text-align: center;
 }
 
-/********* HOME PAGE STYLES  *******/
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--pink--color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 70px;
+    
+  }
 
+/********* HOME PAGE STYLES  *******/
+.logo{
+    font-size: 2.2rem;
+    margin-left: 20px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.name {
+    color:rgb(160, 7, 114);
+}
 
 .img-fluid{
-    width: 20vw;
-    height: 45vh;
-    margin-right: 10px;
+    width: 22vw;
+    height: 50vh;
+    margin-left: 60px;
     object-fit: fill;
-
+    border-radius: 50%;
+    border: #ffffff 5px solid;
 }
 
 .text-about p{
     width: 30vw;
+    margin-top: 5px;
 }
 
 
 .home{
-    margin-top: 12%;
-    margin-bottom: 8%;;
-
+    margin-top:12%;
+    margin-bottom: 8%;
 }
 
-.icon{
+.cv-btn{
     color: var(--white-color);
-    margin-top: 2px;
-}
-.icon:hover{
-    color: var(--grey-color);
-}
-
-.Portfolio{
-    color: var(--white-color);
+    font-weight: 600;
     font-size: 1.1rem;
-    width: 50%;
-    border: var(--white-color) 1px solid;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
+    width: 40%;
+    border: var(--white-color) 2px solid;
+    padding: 10px 5px 10px 5px;
     text-align: center;
 }
-
-.Portfolio:hover{
-    color: var(--grey-color);
+.cv-btn:hover{
+    color: var(--pink--color);
     text-decoration: none;
+    border: var(--pink--color) 2px solid;
 }
+
 
 .text{
     color: var(--grey-color);
@@ -136,18 +144,18 @@ ul li a{
     overflow: hidden;
 }
 
-.name {
+.education {
     font-size: 2.5rem;
     font-family: 'DM Serif Display', serif;
     color: transparent;
-    background-image: linear-gradient(to right, #f326e5, #3a99fe, rgb(116, 17, 68));
+    background-image: linear-gradient(to right, #7a1562, #ed0ec8, rgb(154, 3, 124));
     -webkit-background-clip: text;
     background-clip: text;
-    animation: name 10s infinite linear;
+    animation: education 10s infinite linear;
 }
 
 /* Keyframes */
-@keyframes name {
+@keyframes education {
     0% {
         background-position: 0 1600px;
     }
@@ -167,16 +175,12 @@ ul li a{
     }
 }
 
-div  {
-    height: 100%;
-  width: 100%;
-  top: 0;
-  
-}
-
 
 /********* ABOUT PAGE STYLES  *******/
-
+.rounded{
+    width: 20vw;
+    height: 50vh;
+}
 .text-color{
     color: var(--grey-color);
 }
@@ -186,22 +190,13 @@ div  {
 }
 
 .about p{
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1rem;
     text-align: left;
+    width: 45vw;
+    margin-left: 30px;
 }
 
 
-.cv-btn{
-    color: var(--white-color);
-    font-size: 1.1rem;
-    border: var(--white-color) 1px solid;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    display: block;
-    margin: auto;
-    width: 15vw;
-}
 
 /********* SKILL PAGE STYLES  *******/
 
@@ -320,6 +315,8 @@ div  {
     color: var(--grey-color);
 }
 
+
+
 /********* MEDIA SIZE  *******/
 
 @media (max-width: 600px) {
@@ -330,14 +327,21 @@ div  {
     html {
         scroll-padding: 5rem;
     }
-    .order-md-1 {
-        order: 2;
+    .home-flex{
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .order-md-2 {
-        order: 1;
+    .about-flex{
+        flex-direction: column;
     }
 
-    .name{
+    .rounded{
+        width: 80vw;
+        height: 40vh;
+        margin: auto;
+        display: block;
+    }
+    .education{
         font-size: 2.5rem;
     }
     .text-about{
@@ -347,7 +351,7 @@ div  {
         margin-bottom: 10px;
     }
     .text-about p{
-        width: 85vw;
+        width: 90vw;
         text-align: justify;
     
     }
@@ -356,16 +360,13 @@ div  {
         display: block;
         margin: auto;
     }
-    .about-line{
-        font-size: 1.5rem;
-    }
     .navbar-scrolled{
         height: 11%;
     }
     .img-fluid{
-        width: 45vw;
+        width: 50vw;
         height: 30vh;
-        margin-top: 15%;
+        margin: 30px auto;
     }
     #contact-form{
         width: 80vw;
@@ -406,10 +407,9 @@ div  {
     }
     .Portfolio{
         width:100%;
-
     }
     .cv-btn{
-        width: 90%;
+        width: 70%;
     }
     .contact-btn{
         width: 80%;
@@ -417,16 +417,14 @@ div  {
     .project-text{
         width: 100%;
     }
+    .project-name{
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
     
-    .order-md-1 {
-        order: 2;
-    }
-    .order-md-2 {
-        order: 1; 
-    }
+   
     #contact-form{
         width: 60vw;
         margin: auto;

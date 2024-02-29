@@ -10,26 +10,23 @@
 
 {% block content %}
 <!-- Home page -->
-<div id="home" class="home">
-    <div class="container mt-3"> 
-        <div class="row">
-            <div class="col-md-8 mt-5 order-md-1">
-                <div class="text-about mb-4">
-                    <h3 class="text">Hi, I am Dhvani Intwala</h3>
-                    <h1><span class="name">Full-Stack Software Developer</span></h1>
-                    <p class="text-color">I'm a Full-stack software Developer from the Code Institute. With expertise in HTML, CSS, JavaScript, Python, Bootstrap, Django, and much more. As a dynamic and forward-thinking programmer, I'm committed to staying up to date with the latest trends and technologies in the field.</p>
-                </div>
-                <div class="d-flex">
-                    <a class="btn Portfolio button mr-4" href="{% url 'home' %}#project">Portfolio &rarr;</a>
-                    <div class="">
-                        <a href="mailto:intdhvani2627@gmail.com"><i class="fa fa-envelope-square icon mr-3 fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/dhvani-intwala/"><i class="fa fa-linkedin-square icon mr-3 fa-2x"></i></a>
-                        <a href="https://github.com/Dhvani-intwala"><i class="fa fa-github-square icon mr-3 fa-2x"></i></a>
+<div id="home" class="home bg-home">
+    <div class="container mt-4"> 
+        <div class="d-flex home-flex">
+            <div class="">
+                <div class="text-about mb-5 mt-5">
+                    <h3 class="text">Hi There! I'm</h3>
+                    <h1><span class="education">Full-Stack Software Developer</span></h1>
+                    <p class="text-color mt-2">I'm a Full-stack software Developer from the Code Institute. With expertise in HTML, CSS, JavaScript, Python, Bootstrap, Django, and much more. As a dynamic and forward-thinking programmer, I'm committed to staying up to date with the latest trends and technologies in the field.</p>
+                    <div class="d-flex mb-5 mt-5">
+                        <a href="lebenslauf.pdf" download="lebenslauf" class="btn cv-btn button"><i class="fa fa-download mr-2"></i>Download CV</a>
+                    
                     </div>
                 </div>
+               
             </div>
-            <div class="col-md-3 mx-auto text-center mb-2 order-md-2">
-                <img src="{% static 'images/Dhvani.jpg' %}" alt="my-image" class="img-fluid mb-3 animate">
+            <div class="mx-auto text-center">
+                <img src="{% static 'images/Dhvani11.jpg' %}" alt="my-image" class="img-fluid mb-3">
             </div>
         </div>
     </div>
@@ -37,13 +34,26 @@
 <!-- About page -->
 <div id="about" class="about bg mb-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="title mb-5">About Me</h2>
-                <h2 class="text-color overflow-hidden mb-4 about-line">Welcome to my portfolio</h2>
-                <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
-                <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
-                <a href="lebenslauf.pdf" download="lebenslauf" class="btn cv-btn button"><i class="fa fa-download mr-2"></i>Download CV</a>
+        <div>
+            <div>
+                <h2 class="title">About Me</h2>
+                <h6 class="text-center">Professional Profile - There Is All About Me</h6>
+                <div class="text-center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="d-flex about-flex">
+                    <div>
+                        <img src="{% static 'images/Dhvani2.jpg' %}" alt="my-image" class="rounded float-start mb-3">
+                    </div>
+                    <div class="">
+                        <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
+                        <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
+                    </div>
+                </div>
+               
             </div>
         </div>
     </div>
@@ -115,7 +125,7 @@
                         <img src="{% static 'images/project1.png'%}" alt="History of india" class="project-img">
                     </a>
                     <div class="text-center mt-4">
-                       <h4>History website</h4>
+                       <h4 class="project-name">History website</h4>
                        <div class="icon-box">
                         <img src="{% static 'images/html.png'%}" alt="html" class="icon-img">
                         <img src="{% static 'images/css-3.png'%}" alt="css" class="icon-img">
@@ -131,7 +141,7 @@
                         <img src="{% static 'images/project2.png'%}" alt="History of india" class="project-img">
                     </a>
                     <div class="text-center mt-4">
-                        <h4>Disney Quiz</h4>
+                        <h4 class="project-name">Disney Quiz</h4>
                         <div class="icon-box">
                             <img src="{% static 'images/html.png'%}" alt="html" class="icon-img">
                             <img src="{% static 'images/css-3.png'%}" alt="css" class="icon-img">
@@ -148,7 +158,7 @@
                         <img src="{% static 'images/project3.png'%}" alt="History of india" class="project-img">
                     </a>
                     <div class="text-center mt-4">
-                        <h4>Cafe Beats</h4>
+                        <h4 class="project-name">Cafe Beats</h4>
                         <div class="icon-box">
                             <img src="{% static 'images/python.png'%}" alt="python" class="icon-img">
                         </div>
@@ -163,7 +173,7 @@
                         <img src="{% static 'images/project4.png'%}" target="_blank" alt="" class="project-img">
                     </a>
                     <div class="text-center mt-4">
-                        <h4>spice villa</h4>
+                        <h4 class="project-name">spice villa</h4>
                         <div class="icon-box">
                             <img src="{% static 'images/html.png'%}" alt="html" class="icon-img">
                             <img src="{% static 'images/css-3.png'%}" alt="css" class="icon-img">
@@ -183,7 +193,7 @@
                         <img src="{% static 'images/project5.jpg'%}" alt="" class="project-img">
                     </a>
                     <div class="text-center mt-4">
-                        <h4>My Books Store</h4>
+                        <h4 class="project-name">My Books Store</h4>
                         <div class="icon-box">
                             <img src="{% static 'images/html.png'%}" alt="html" class="icon-img">
                             <img src="{% static 'images/css-3.png'%}" alt="css" class="icon-img">
@@ -211,7 +221,7 @@
     <form action="{% url 'home' %}"  method="POST" id="contact-form">
         {% csrf_token %}
         {{ form|crispy }}
-        <button class="btn contact-btn button center" type="submit">Send message</button>
+        <button class="btn contact-btn button center" type="submit">Contact Now</button>
         <span class="message text-white"></span>
     </form>   
 </div>
