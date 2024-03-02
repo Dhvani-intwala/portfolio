@@ -18,6 +18,7 @@ body {
     text-decoration: none;
     color: var(--white-color);
     background-color:#000000;
+    height: 100%;
 }
   
 html{
@@ -30,16 +31,17 @@ html{
     background-color: #000000;
 }
 
-
 .container{
     width:100%;
     height: 100%;
+    margin: auto;
 }
 
 /********* NAV STYLES  *******/
 
 header{
-    position: relative;
+    position: absolute;
+    width: 100%;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -108,7 +110,7 @@ ul li a{
     margin-left: 60px;
     object-fit: fill;
     border-radius: 50%;
-    border: #ffffff 5px solid;
+    border: #2f2f2f 2px solid;
 }
 
 .text-about p{
@@ -179,7 +181,7 @@ ul li a{
 /********* ABOUT PAGE STYLES  *******/
 .rounded{
     width: 20vw;
-    height: 50vh;
+    height: 60vh;
 }
 .text-color{
     color: var(--grey-color);
@@ -196,6 +198,10 @@ ul li a{
     margin-left: 30px;
 }
 
+.icon{
+    color: var(--pink--color);
+}
+
 
 
 /********* SKILL PAGE STYLES  *******/
@@ -206,8 +212,13 @@ ul li a{
     margin: 10px 10px;
 }
 
+.skill{
+    width:90vw;
+    margin: auto;
+}
+
 .grid-item{
-    /* box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px; */
+    box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px;
     margin-bottom: 10px;
 }
 
@@ -277,8 +288,7 @@ ul li a{
     height: 20px;
     object-fit: cover;
 }
-.project-text{
-    width:75vw;
+.project-text p{
     text-align: justify;
 }
 
@@ -315,7 +325,36 @@ ul li a{
     color: var(--grey-color);
 }
 
+/********* FOOTER  *******/
 
+footer{
+    width: 100%;
+}
+
+.icon-footer{
+    border: #ffffff 2px solid;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 15px;
+    display: inline-block;
+}
+
+.footer-link:hover .icon-footer {
+    transform: scale(1.1);
+}
+
+
+.footer-link:hover .icon-footer:hover {
+    background-color: var(--black-color);
+    border: var(--pink--color) 2px solid;
+}
+
+hr{
+    background-color: var(--white-color);
+    width:10vw;
+    height: 2px;
+
+}
 
 /********* MEDIA SIZE  *******/
 
@@ -332,6 +371,9 @@ ul li a{
         flex-direction: column-reverse;
     }
     .about-flex{
+        flex-direction: column;
+    }
+    .data-flex{
         flex-direction: column;
     }
 
@@ -364,7 +406,7 @@ ul li a{
         height: 11%;
     }
     .img-fluid{
-        width: 50vw;
+        width: 55vw;
         height: 30vh;
         margin: 30px auto;
     }
