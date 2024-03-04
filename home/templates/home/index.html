@@ -10,8 +10,8 @@
 
 {% block content %}
 <!-- Home page -->
-<div id="home" class="home bg-home">
-    <div class="container mt-4"> 
+<div id="home" class="home bg-home ">
+    <div class="container mt-4 allpages"> 
         <div class="d-flex home-flex">
             <div class="">
                 <div class="text-about mb-5 mt-5">
@@ -32,8 +32,8 @@
     </div>
 </div>
 <!-- About page -->
-<div id="about" class="about bg mb-5">
-    <div class="container">
+<div id="about" class="about bg mb-5 ">
+    <div class="container allpages">
         <div>
             <div>
                 <h2 class="title">About Me</h2>
@@ -73,8 +73,8 @@
 </div>
 
 <!-- Skills page -->
-<div id="skill" class="skill bg mb-5">
-    <div class="container">
+<div id="skill" class="skill bg mb-5 ">
+    <div class="container allpages">
         <h2 class="title">Skills</h2>
         <p class="text-center">My creative skills & experiences.</p>
         <div class="text-center">
@@ -86,7 +86,7 @@
         
         <div class="row mb-5 mt-2">
             <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item  html p-1">
+                <div class="grid-item html p-1">
                     <img src="{% static 'images/html.png'%}" alt="html" class="img-skill d-block mx-auto">
                     <p class="text-center">HTML</p>
                 </div>
@@ -117,8 +117,8 @@
             </div>
             <div class="col-md-4 col-6 mb-4">
                 <div class="grid-item django p-1">
-                    <img src="{% static 'images/Django.png'%}" alt="Django" class="img-skill d-block mx-auto">
-                    <p class="text-center">Django</p>
+                    <img src="{% static 'images/Django.png'%}" alt="Django" class="img-skill d-block mx-auto">  
+                    <p class="text-center">Django</p> 
                 </div>
             </div>
             <div class="col-md-4 col-6 mb-4">
@@ -134,10 +134,16 @@
 <!-- PROJECT PAGE -->
 
 
-<div id="project" class="project bg mb-5">
-    <div class="container">
+<div id="project" class="project bg mb-5 ">
+    <div class="container allpages">
         <h2 class="title mb-2">Projects</h2>
-        <h4 class="mb-4 overflow-hidden">Check out some of my work</h4>
+        <p class="text-center">Check out some of my work</p>
+        <div class="text-center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
         <p class="mb-5 project-text">Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
         <div class="row mb-5 mt-2">
             <div class="col-12 col-sm-6 col-md-4 mb-4">
@@ -236,8 +242,14 @@
 
 <!-- CONTACT PAGE -->
 <div class="container contact mb-5" id="contact">
-    <h2 class="title mb-2">Contact Me</h2>
-    <h5 class="overflow-hidden mb-5">Submit the form below to get in touch with me</h5>
+    <h2 class="title mb-2">Get in touch</h2>
+    <p class="text-center">Submit the form below to get in touch with me</p>
+    <div class="text-center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     {% load crispy_forms_tags %}
     <form action="{% url 'home' %}"  method="POST" id="contact-form">
         {% csrf_token %}
