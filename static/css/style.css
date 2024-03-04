@@ -217,7 +217,9 @@ ul li a{
 
 .grid-item{
     box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px;
+    width: 95%;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .html{
@@ -353,7 +355,9 @@ hr{
     background-color: var(--white-color);
     width:10vw;
     height: 2px;
-
+}
+.footer-text{
+    width: 50vw;
 }
 
 /********* MEDIA SIZE  *******/
@@ -461,6 +465,12 @@ hr{
     }
     .project-name{
         overflow: hidden;
+    }
+    .allpages{
+        width: 100%;
+    }
+    .footer-text{
+        width: 90%;
     }
 }
 
