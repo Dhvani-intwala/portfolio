@@ -1,4 +1,36 @@
-//
+$(document).ready(function() {
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+        
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top
+        }, 800, function() {
+            window.location.hash = target;
+        });
+
+        // Close the navigation menu on mobile
+        if ($(window).width() < 992) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+
+
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        $('.page-section').each(function(i) {
+            var sectionTop = $(this).offset().top;
+            var sectionBottom = sectionTop + $(this).outerHeight();
+            
+            // Adjusting scroll distance to set active class when section is at least 50% visible
+            if (scrollDistance >= sectionTop - $(window).height() / 2 && scrollDistance < sectionBottom) {
+                $('.navbar a.active').removeClass('active');
+                $('.navbar a').eq(i).addClass('active');
+            }
+        });
+    }).scroll(); 
+});
+
 const nav = document.querySelector('.navbar');
 
 if(window.innerWidth > 700) {
