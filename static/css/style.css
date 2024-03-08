@@ -252,13 +252,13 @@ ul li a{
 /********* PROJECTS PAGE STYLES  *******/
 
 .project-img {
-    width: 100%; /* Set the width to 100% of the container */
-    height: auto; /* Allow the height to adjust proportionally */
-    max-width: 100%; /* Ensure the image doesn't exceed its original size */
-    margin: 5px auto; /* Add margin for spacing */
+    width: 100vw;
+    height: 27vh; 
+    max-width: 100%;
+    margin: 5px auto; 
     display: block;
     border-radius: 5px;
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit: cover;
     border: #292727 2px solid;
 }
 
@@ -343,6 +343,7 @@ ul li a{
 
 .contact-btn:hover{
     color: var(--pink--color);
+    border: var(--pink--color) 2px solid;
 }
 
 /********* FOOTER  *******/
@@ -381,10 +382,8 @@ hr{
 
 @media (max-width: 600px) {
 
-    /* *{
+    html, body {
         overflow-x: hidden;
-    } */
-    html {
         scroll-padding: 5rem;
     }
     .home-flex{
@@ -416,7 +415,6 @@ hr{
     .text-about p{
         width: 90vw;
         text-align: justify;
-    
     }
     .about p{
         width: 85vw;
@@ -440,15 +438,8 @@ hr{
         height: 10vh;
     }
     .project-img{
-        width: 100vw;
-        height: 20vh;
-    }
-
-    .cards{
         width: 80vw;
-        padding: 20px 20px 8px 20px;
-        /* margin-bottom: 150px; */
-        margin: auto auto 150px auto;
+        height: 25vh;
     }
     #nav.navbar {
         width: 100%;
