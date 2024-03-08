@@ -440,6 +440,7 @@ hr{
     .project-img{
         width: 80vw;
         height: 25vh;
+        margin-bottom: 10px;
     }
     #nav.navbar {
         width: 100%;
