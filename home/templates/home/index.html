@@ -283,11 +283,15 @@
         <span class="dot"></span>
     </div>
     {% load crispy_forms_tags %}
-    <form action="{% url 'home' %}"  method="POST" id="contact-form">
+    <form action="{% url 'home' %}#contact"  method="POST" id="contact-form">
         {% csrf_token %}
         {{ form|crispy }}
+
+        <div class="error-container">
+            <small class="error"></small>
+        </div>
         <button class="btn contact-btn button center" type="submit">Contact Now</button>
-        <span class="message text-white"></span>
+        
     </form>   
 </div>
 

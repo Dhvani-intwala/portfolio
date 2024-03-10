@@ -8,11 +8,6 @@ $(document).ready(function() {
         }, 800, function() {
             window.location.hash = target;
         });
-
-        // Close the navigation menu on mobile
-        if ($(window).width() < 992) {
-            $('.navbar-collapse').collapse('hide');
-        }
     });
 
 
@@ -22,14 +17,21 @@ $(document).ready(function() {
             var sectionTop = $(this).offset().top;
             var sectionBottom = sectionTop + $(this).outerHeight();
             
+            console.log('Scroll Distance:', scrollDistance);
+            console.log('Section Top:', sectionTop);
+            console.log('Section Bottom:', sectionBottom);
+            
             // Adjusting scroll distance to set active class when section is at least 50% visible
-            if (scrollDistance >= sectionTop - $(window).height() / 2 && scrollDistance < sectionBottom) {
+            if (scrollDistance >= sectionTop - $(window).height() / 2 && scrollDistance < sectionBottom){
+                console.log('Adding active class to navbar link:', i+1);
                 $('.navbar a.active').removeClass('active');
-                $('.navbar a').eq(i).addClass('active');
+                $('.navbar a').eq(i+1).addClass('active');
             }
         });
-    }).scroll(); 
+    }).scroll();
+    
 });
+
 
 const nav = document.querySelector('.navbar');
 
@@ -54,3 +56,5 @@ for (let i = 0; i < btns.length; i++) {
         this.classList.add("active");
     });
 }
+
+const form = document.querySelector('form');

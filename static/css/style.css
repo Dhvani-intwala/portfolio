@@ -42,15 +42,6 @@ header{
     position: absolute;
     width: 100%;
 }
-
-.navbar-nav .nav-item .nav-link {
-    transition: background 0.3s ease;
-}
-
-.active {
-    color: var(--pink--color);
-}
-
 .navbar-scrolled{
     background-color: #000000;
     color: #010e1d;
@@ -60,23 +51,42 @@ header{
 }
 
 .navbar{
-    transition: all 0.5s;
     padding: 20px 180px 10px 180px;
 }
 
 ul li a{
     font-size: 1.1rem;
     margin-right: 20px;
+    color: var(--white-color);
 }
+
+.logo{
+    font-size: 2.2rem;
+    margin-left: 20px;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--white-color);
+}
+.logo:hover{
+    color: var(--white-color);
+}
+
+.name{
+    color:rgb(160, 7, 114);
+}
+
+.active {
+    color: var(--pink--color);
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: var(--pink--color);
+}
+
 .title {
     font-size: 35px;
     font-family: 'Berkshire Swash', cursive;
     color: var(--pink--color);
-	/* margin: 0 0 30px;
-	color: #ffffff;
-	line-height: 42px;
-	display: inline-block;
-	border-bottom: 2px solid #ffffff; */
     text-align: center;
 }
 
@@ -96,15 +106,6 @@ ul li a{
 }
 .home-flex{
     margin: auto;
-}
-.logo{
-    font-size: 2.2rem;
-    margin-left: 20px;
-    font-family: 'Berkshire Swash', cursive;
-}
-
-.name {
-    color:rgb(160, 7, 114);
 }
 
 .img-fluid{
@@ -331,6 +332,7 @@ ul li a{
 
 .contact-form-input{
     background-color: #000000;
+    color: var(--white-color);
 }
 .contact-btn{
     color: var(--white-color);
@@ -344,6 +346,10 @@ ul li a{
 .contact-btn:hover{
     color: var(--pink--color);
     border: var(--pink--color) 2px solid;
+}
+
+.error{
+    color:var(--white-color)
 }
 
 /********* FOOTER  *******/
@@ -440,8 +446,54 @@ hr{
     .project-img{
         width: 80vw;
         height: 25vh;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
+    #nav.navbar {
+        width: 100%;
+        height: auto;
+        padding: 0 !important;
+    }
+    #main-nav a {
+        color: #ffffff;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #main-nav a:hover {
+        color: var(--pink--color); 
+    }
+
+    .active{
+        color: var(--pink--color);
+    }
+    .Portfolio{
+        width:100%;
+    }
+    .cv-btn{
+        width: 50%;
+    }
+    .contact-btn{
+        width: 80%;
+    }
+    .project-text{
+        width: 100%;
+    }
+    .project-name{
+        overflow: hidden;
+    }
+    .allpages{
+        width: 100%;
+    }
+    .footer-text{
+        width: 90%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    
     #nav.navbar {
         width: 100%;
         height: auto;
@@ -461,34 +513,8 @@ hr{
     #main-nav a:hover {
         color: #555; 
     }
-    .Portfolio{
-        width:100%;
-    }
-    .cv-btn{
-        width: 70%;
-    }
-    .contact-btn{
-        width: 80%;
-    }
-    .project-text{
-        width: 100%;
-    }
-    .project-name{
-        overflow: hidden;
-    }
     .allpages{
         width: 100%;
-    }
-    .footer-text{
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    
-    #contact-form{
-        width: 60vw;
-        margin: auto;
     }
 }
 
