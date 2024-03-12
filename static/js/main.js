@@ -1,39 +1,5 @@
-$(document).ready(function() {
-    $('a[href*="#"]').on('click', function(e) {
-        e.preventDefault();
-        var target = $(this).attr("href");
-        
-        $('html, body').stop().animate({
-            scrollTop: $(target).offset().top
-        }, 800, function() {
-            window.location.hash = target;
-        });
-    });
 
-
-    $(window).scroll(function() {
-        var scrollDistance = $(window).scrollTop();
-        $('.page-section').each(function(i) {
-            var sectionTop = $(this).offset().top;
-            var sectionBottom = sectionTop + $(this).outerHeight();
-            
-            console.log('Scroll Distance:', scrollDistance);
-            console.log('Section Top:', sectionTop);
-            console.log('Section Bottom:', sectionBottom);
-            
-            // Adjusting scroll distance to set active class when section is at least 50% visible
-            if (scrollDistance >= sectionTop - $(window).height() / 2 && scrollDistance < sectionBottom){
-                console.log('Adding active class to navbar link:', i+1);
-                $('.navbar a.active').removeClass('active');
-                $('.navbar a').eq(i+1).addClass('active');
-            }
-        });
-    }).scroll();
-    
-});
-
-
-const nav = document.querySelector('.navbar');
+const nav = document.querySelector('#nav');
 
 if(window.innerWidth > 700) {
 window.addEventListener('scroll', () =>{
@@ -44,17 +10,32 @@ window.addEventListener('scroll', () =>{
     }
 });
 }
-
-// Nav bar active class
-
-const header = document.getElementById("header");
-const btns = header.getElementsByClassName("nav-link");
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active")
-        current[0].classList.remove("active");
-        this.classList.add("active");
+$(document).ready(function() {
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+        // Check if the target is not empty and starts with #
+        if (target && target.startsWith('#')) {
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top
+            }, 1000, function() {
+                window.location.hash = target;
+            });
+        }
     });
-}
 
-const form = document.querySelector('form');
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        $('.page-section').each(function(i) {
+            var sectionTop = $(this).offset().top;
+            var sectionBottom = sectionTop + $(this).outerHeight();
+            // Adjusting scroll distance to set active class when section is at least 50% visible
+            if (scrollDistance >= sectionTop - $(window).height() / 2 && scrollDistance < sectionBottom) {
+                $('#nav a.active').removeClass('active');
+                $('#nav a').eq(i+1).addClass('active');
+            }
+        });
+    }).scroll();
+});
+
+

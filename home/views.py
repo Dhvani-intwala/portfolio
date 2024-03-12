@@ -14,8 +14,7 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent!')
-            return HttpResponseRedirect('#contact?submitted=True')
-
+            return HttpResponseRedirect('/#contact/?submitted=True')
         else:
             form = ContactForm()
             messages.warning(request, 'Message not sent. Please try again.')
