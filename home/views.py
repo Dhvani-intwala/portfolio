@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse
+from django.shortcuts import render, reverse, redirect
 from .forms import ContactForm
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -14,7 +14,12 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent!')
-            return HttpResponseRedirect('/#contact/?submitted=True')
+            # return HttpResponseRedirect('/#contact/?submitted=True')
+              # Get the current scroll position
+            scroll_position = request.POST.get('scroll_position', '0')
+            print(scroll_position)
+            # Redirect to the same page with the scroll position as a query parameter
+            return redirect('/', scroll_position=scroll_position)
         else:
             form = ContactForm()
             messages.warning(request, 'Message not sent. Please try again.')

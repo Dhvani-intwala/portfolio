@@ -11,18 +11,19 @@ window.addEventListener('scroll', () =>{
 });
 }
 $(document).ready(function() {
-    $('a[href*="#"]').on('click', function(e) {
-        e.preventDefault();
-        var target = $(this).attr("href");
-        // Check if the target is not empty and starts with #
-        if (target && target.startsWith('#')) {
-            $('html, body').stop().animate({
-                scrollTop: $(target).offset().top
-            }, 1000, function() {
-                window.location.hash = target;
-            });
-        }
-    });
+    // $('a[href*="#"]').on('click', function(e) {
+    //     e.preventDefault();
+    //     var target = $(this).attr("href");
+    //     // Check if the target is not empty and starts with #
+    //     if (target && target.startsWith('#')) {
+    //         $('html, body').stop().animate({
+    //             scrollTop: $(target).offset().top
+    //         }, 1000, function() {
+    //             window.location.hash = target;
+    //         });
+    //     }
+    // });
+    
 
     $(window).scroll(function() {
         var scrollDistance = $(window).scrollTop();
@@ -38,4 +39,7 @@ $(document).ready(function() {
     }).scroll();
 });
 
+document.getElementById('contact-form').addEventListener('submit', function () {
+    document.getElementById('scroll_position').value = window.scrollY;
+});
 

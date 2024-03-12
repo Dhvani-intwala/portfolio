@@ -26,6 +26,16 @@
 
   </head>
   <body data-offset="100">
+
+    <!-- Message Alert Bar ----->
+    <div>
+      {% for message in messages %}
+      <div class="alert {{ message.tags }} alert-dismissible fade show alert-bar" id="msg" role="alert">
+          {{ message | safe }}
+      </div>
+      {% endfor %}
+    </div>
+
     {% block navbar %}
     <!-- nav bar -->
     <header id="header">
@@ -84,7 +94,16 @@
 
     {% block postloadjs %}
     <!-- Optional JavaScript -->
+      <!-- Alert messages disappear function. Credit: CI walkthrough -->
+      <script>
+        setTimeout(function () {
+            let messages = document.getElementById("msg");
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000);
+      </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

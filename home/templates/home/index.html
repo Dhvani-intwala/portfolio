@@ -50,16 +50,14 @@
                         <img src="{% static 'images/Dhvani2.jpg' %}" alt="my-image" class="rounded float-start mb-3">
                     </div>
                     <div>
-                        <div>
-                            <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
-                            <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
-                        </div>
+                        <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
+                        <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
                         <div class="row d-flex data-flex">
                             <div class="col-md-6">
                                 <p><i class="fa fa-calendar icon"></i> Date of birth: 27 july 1998</p>
                                 <p><i class="fa fa-flag icon"></i> Freelance: Available</p>
                                 <p><i class="fa fa-location-arrow icon"></i> Address: Schelklingen, Germany</p>
-                                <p><i class="fa fa-globe icon"></i> Spoken Langages: English - German</p>
+                                <p><i class="fa fa-globe icon"></i> Spoken Langages: English - German - Gujarati </p>
                             </div>
                             <div class="col-md-6">
                                 <p><i class="fa fa-flag icon"></i> Nationality: Indian</p>
@@ -285,10 +283,11 @@
         <span class="dot"></span>
     </div>
     {% load crispy_forms_tags %}
-    <form action="{% url 'home' %}#contact"  method="POST" id="contact-form">
+    <form action="{% url 'home' %}"  method="POST" id="contact-form">
         {% csrf_token %}
         {{ form|crispy }}
-
+        
+        <input type="hidden" name="scroll_position" id="scroll_position" value="0">
         <div class="error-container">
             <small class="error"></small>
         </div>
