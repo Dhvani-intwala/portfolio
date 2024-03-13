@@ -52,7 +52,39 @@ html{
     left: 40%;
 
 }
+/* ----------------------PRELOADER----------------------------- */
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #030303;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 7px solid var(--pink--color);
+    border-top-color: transparent;
+    animation: preloader 0.7s linear infinite;
+}
+@keyframes preloader {
+    from {
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 /********* NAV STYLES  *******/
 
 header{

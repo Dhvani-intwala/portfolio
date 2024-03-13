@@ -23,7 +23,10 @@ $(document).ready(function() {
     //         });
     //     }
     // });
-    
+    //---------------- PRELOADER -------------
+      if ($("#preloader")) {
+        $("#preloader").remove();
+    }
 
     $(window).scroll(function() {
         var scrollDistance = $(window).scrollTop();
