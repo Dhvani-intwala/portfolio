@@ -46,3 +46,11 @@ document.getElementById('contact-form').addEventListener('submit', function () {
     document.getElementById('scroll_position').value = window.scrollY;
 });
 
+// navbar hide in mobile menu after click
+$(function(){ 
+    var navMain = $(".navbar-collapse");
+
+    navMain.on("click", "a", null, function () {
+        navMain.collapse('hide');
+    });
+});

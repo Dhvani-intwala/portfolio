@@ -5,10 +5,11 @@
 /********* GENERAL STYLES  *******/
 
 :root {
-    --grey-color: rgb(175, 159, 159);
+    --grey-color: rgb(33, 33, 33);
     --black-color: rgb(6, 6, 6);
     --white-color: rgb(255, 255, 255);
     --pink--color: rgb(160, 7, 114);
+    --light--color: rgb(129, 128, 128);
 }
   
 body {
@@ -32,8 +33,7 @@ html{
 }
 
 .container{
-    width:100%;
-    height: 100%;
+    width:70%;
 }
 /* -------------------- MESSAGE ALERT BAR------------------------ */
 
@@ -100,7 +100,7 @@ header{
 }
 
 .navbar{
-    padding: 20px 180px 10px 180px;
+    padding: 20px 150px 20px 150px;
 }
 
 ul li a{
@@ -153,16 +153,16 @@ ul li a{
 .allpages{
     margin: auto;
     display: block;
-    width: 70%;
+    width: 75%;
 }
 .home-flex{
     margin: auto;
 }
 
 .img-fluid{
-    width: 22vw;
-    height: 50vh;
-    margin-left: 60px;
+    width: 25vw;
+    height: 53vh;
+    margin-left: 80px;
     object-fit: fill;
     border-radius: 50%;
     border: #2f2f2f 2px solid;
@@ -171,6 +171,7 @@ ul li a{
 .text-about p{
     width: 30vw;
     margin-top: 5px;
+    color: var(--light--color);
 }
 
 
@@ -196,7 +197,6 @@ ul li a{
 
 
 .text{
-    color: var(--grey-color);
     font-size: 1.5rem;
     overflow: hidden;
 }
@@ -238,9 +238,6 @@ ul li a{
     width: 20vw;
     height: 60vh;
 }
-.text-color{
-    color: var(--grey-color);
-}
 
 .overflow-hidden{
     overflow: hidden;
@@ -249,7 +246,7 @@ ul li a{
 .about p{
     font-size: 1rem;
     text-align: left;
-    width: 45vw;
+    width: 48vw;
     margin-left: 30px;
 }
 
@@ -257,13 +254,11 @@ ul li a{
     color: var(--pink--color);
 }
 
-
-
 /********* SKILL PAGE STYLES  *******/
 
 .img-skill{
     width: 6vw;
-    height: 10vh;
+    height: 12vh;
     margin: 10px 10px;
 }
 
@@ -303,17 +298,6 @@ ul li a{
 
 /********* PROJECTS PAGE STYLES  *******/
 
-.project-img {
-    width: 100vw;
-    height: 27vh; 
-    max-width: 100%;
-    margin: 5px auto; 
-    display: block;
-    border-radius: 5px;
-    object-fit: cover;
-    border: #292727 2px solid;
-}
-
 .icon-img{
     width: 20px;
     height: 20px;
@@ -323,46 +307,60 @@ ul li a{
     text-align: justify;
     width:80%;
 }
-
-.cards {
-    perspective: 1000px;
-    margin-bottom: 170px;
-}
-
-.card-inner {
-    position: relative;
+.card-slide {
     width: 100%;
     height: 100%;
-    transition: transform 2s;
+    position: relative;
     transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.cards:hover .card-inner {
-    transform: rotateY(180deg);
+.card-slide-front,
+.card-slide-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.7s;
 }
 
-.card-front,
-.card-back {
-    position: absolute;
+.cards {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-slide-back {
+    background: linear-gradient(#373737, #fff);
+    color: #000;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+  
+.cards:hover .card-slide-front {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.cards:hover .card-slide-back {
+    opacity: 1;
+}
+.card-slide-front img{
     width: 100%;
-    max-height: auto;
-    backface-visibility: hidden;
+    height: 100%;
+    border-radius: 10px;
 }
 
-.card-front {
-    z-index: 1;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-}
-
-/* Additional styling for card-back */
-.card-back {
-    background-color: #292727;
-    color: #ffffff;
-    padding: 20px;
-}
 
 
 /********* CONTACT PAGE STYLES  *******/
@@ -437,258 +435,267 @@ hr{
 
 /********* MEDIA SIZE  *******/
 
-@media (max-width: 600px) {
 
-    html, body {
-        overflow-x: hidden;
-        scroll-padding: 5rem;
+@media only screen and (max-width: 600px) {
+    /* Navbar */
+    .navbar {
+      padding: 10px 10px;
     }
+
+    .navbar .nav-link{
+        text-align: center;
+        margin: 10px 10px;
+        font-size: 1.2rem;
+    }
+  
+    .logo {
+      font-size: 1.8rem;
+    }
+  
+    ul li a {
+      font-size: 1rem;
+    }
+    .allpages{
+        width: 100vw;
+    }
+  
+    /* Home page */
+    .img-fluid {
+      width: 70vw;
+      height: 40vh;
+      margin-left: 0;
+      margin-right: auto;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+  
+    .text-about p {
+      width: 70vw;
+      text-align: justify;
+    }
+  
+    .cv-btn {
+      width: 60%;
+    }
+    .education{
+        font-size: 2rem;
+    }
+  
+    /* About page */
+    .rounded {
+      width: 50vw;
+      height: auto;
+    }
+  
+    .about p {
+      width: 85%;
+      margin-left: 0 !important;
+    }
+    .data-flex{
+        text-align: left;
+    }
+  
+    /* Skill page */
+    .img-skill {
+      width: 15vw;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    /* Projects page */
+    .project-img {
+      width: 80vw;
+      height: 27vh;
+      margin-bottom: 50px;
+    }
+  
+    /* Contact page */
+    .contact form {
+      width: 90%;
+    }
+  
+    .contact-btn {
+      width: 70%;
+    }
+  
+    /* Footer */
+    .footer-text {
+      font-size: 0.8rem;
+    }
+  
+    .icon-footer {
+      font-size: 1.5rem;
+    }
+}
+  
+@media only screen and (max-width: 567px) {
+    /* Navbar */
+    .logo {
+      font-size: 1.8rem;
+    }
+  
+    ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .allpages{
+        width: 100vw;
+    }
+    .navbar {
+        width: 100vw;
+        padding: 0 !important;
+        background-color: var(--black-color)
+    }
+    /* Home page */
+    .img-fluid {
+      width: 70vw;
+      height: 35vh;
+      margin-top: 50px ;
+    }
+  
+    .text-about p {
+      width: 90%;
+    }
+  
+    .cv-btn {
+      width: 60%;
+    }
+
     .home-flex{
         flex-direction: column;
         flex-direction: column-reverse;
     }
+  
+    /* About page */
     .about-flex{
         flex-direction: column;
     }
     .data-flex{
         flex-direction: column;
+        text-align: left !important;
+    }
+    .rounded {
+      width: 70vw;
+      margin: auto;
+      display: block;
+    }
+  
+    .about p {
+      width: 100%;
+    }
+  
+    /* Skill page */
+    .img-skill {
+      width: 20vw;
+    }
+  
+    /* Projects page */
+    .project-img {
+      width: 90vw;
+      object-fit: fill;
+      margin: 10px auto;
     }
 
-    .rounded{
-        width: 80vw;
-        height: 45vh;
-        margin: auto;
-        display: block;
-    }
-    .education{
-        font-size: 2.5rem;
-    }
-    .text-about{
-        width:100vw !important;
-    }
-    .header{
-        margin-bottom: 10px;
-    }
-    .text-about p{
-        width: 90vw;
-        text-align: justify;
-    }
-    .about p{
-        width: 85vw;
-        display: block;
-        margin: auto;
-    }
-    .navbar-scrolled{
-        height: 11%;
-    }
-    .img-fluid{
-        width: 55vw;
-        height: 30vh;
-        margin: 30px auto;
-    }
-    #contact-form{
-        width: 80vw;
-        margin: auto;
-    }
-    .img-skill{
-        width: 26vw;
-        height: 10vh;
-    }
-    .project-img{
-        width: 80vw;
-        height: 25vh;
-        margin-bottom: 30px;
-    }
-    #nav .navbar {
-        width: 100%;
-        height: auto;
-        padding: 0 !important;
-        background-color: var(--black-color)
-    }
-    #main-nav a {
-        color: #ffffff;
-        font-size: 2rem;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    #main-nav a:hover {
-        color: var(--pink--color); 
-    }
-    .navbar-nav{
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .active {
-        color: var(--pink--color);
-        font-weight: 700;
-    }
-    .Portfolio{
-        width:100%;
-    }
-    .cv-btn{
-        width: 50%;
-    }
-    .contact-btn{
-        width: 80%;
-    }
     .project-text{
-        width: 100%;
+        width: 90vw;
     }
-    .project-name{
-        overflow: hidden;
+  
+    /* Contact page */
+    .contact-btn {
+      width: 80%;
     }
-    .footer-text{
-        width: 90%;
+
+    #contact-form{
+        width:80vw;
     }
-   
+  
+    /* Footer */
+    .footer-text {
+      font-size: 0.7rem;
+      width: 80vw;
+    }
+  
+    .icon-footer {
+      font-size: 1.2rem;
+    }
 }
 
-@media (max-width: 820px) {
-
-    html,body{
-        overflow-x: hidden;
-    }
-    
-    #nav.navbar {
-        background-color: var(--black-color);
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .navbar {
         width: 100vw;
-        height: auto;
         padding: 0 !important;
+        background-color: var(--black-color);
+        position: fixed;
     }
-    #main-nav {
-        width: 100vw;
-        overflow-y: auto;
-    }
-    #main-nav a {
-        color: #ffffff;
-        font-size: 1.2rem;
-        margin-left: 5%;
-    }
-
-    #main-nav a:hover {
-        color: var(--pink--color);
-        font-weight:500;
-    }
-    .active {
-        color: var(--pink--color);
-        font-weight: 700;
-    }
-    .home-flex{
-        flex-direction: column;
-        flex-direction: column-reverse;
-    }
-    .text-about{
-        width: 100%;
-    }
-    .home p{
+    .project-img {
         width: 80vw;
-    }
-    .img-fluid{
-        width: 40vw;
-        height: 30vh;
-        margin: 30px auto;
-    }
-    .about-flex{
-        flex-direction: column;
-    }
-    .rounded{
-        width: 50vw;
-        height: 45vh;
-        margin: auto;
-        display: block;
-    }
-    .aboutme p{
-        width: 100%;
-        margin: auto;
-    }
-
-    .img-skill{
-        width: 10vw;
-        height: 10vh;
-    }
-    .project-img{
-        width: 40vw;
-        height: 18vh;
-        margin-bottom: 30px;
+        height: 17vh;
         object-fit: fill;
-    }
-    #contact-form{
-        width: 60vw;
-        margin: auto;
-    }
-    .footer-text{
-        width: 65%;
-    }
-    
-}
-
-@media (max-width: 1024px){
-
-    html,body{
-        overflow-x: hidden;
-    }
-    .home-flex{
-        flex-direction: column;
-        flex-direction: column-reverse;
-    }
-    .img-fluid{
-        width: 40vw;
-        height: 30vh;
-        margin: 30px auto;
-    }
-    #nav.navbar {
-        background-color: var(--black-color);
-        width: 100vw;
-        height: auto;
-        padding: 0 !important;
-    }
-    #main-nav {
-        width: 100vw;
-        overflow-y: auto;
-    }
-    #main-nav a {
-        color: #ffffff;
-        font-size: 1.2rem;
-        margin-left: 5%;
-    }
-
-    #main-nav a:hover {
-        color: var(--pink--color);
-        font-weight:500;
-    }
-    .active {
-        color: var(--pink--color);
-        font-weight: 700;
-    }
-    .project-img{
-        width: 40vw;
-        height: 15vh;
-        margin-bottom: 50px;
-        object-fit: fill;
-    }
-    #contact-form{
-        width: 50vw;
-        margin: auto;
-    }
-    .home p{
-        width: 70vw;
-    }
-    .rounded{
-        width: 20vw;
-        height: 30vh;
-        margin: auto;
-        display: block;
-    }
-    .about-flex{
-        flex-direction: column;
         
     }
+    .allpages{
+        width: 100vw;
+    }
+    .home-flex{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .about-flex{
+        flex-direction: column;
+    }
+    .img-fluid {
+        width: 60vw;
+        height: 35vh;
+        margin-top: 50px ;
+        margin-left: 0 !important;
+    }
+    .text-about p {
+        width: 80vw;
+    }
+    .rounded {
+        width: 60vw;
+        margin: auto;
+        display: block;
+    }
+    .about p {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    /* Footer */
+    .footer-text {
+        font-size: 0.7rem;
+        width: 60vw;
+    } 
+    .icon-footer {
+        font-size: 1.2rem;
+    }
+    /* Contact page */
+    #contact-form{
+        width:60vw;
+    }
+    
 }
 
-  
+@media only screen and (max-width: 820px){
+    .home-flex{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .about-flex{
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 0 !important;
+    }
+    .container{
+        width:100vw;
+    }
+    .allpages{
+        width: 100vw;
+    }
+
+}
 
 
 
