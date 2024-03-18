@@ -503,10 +503,12 @@ hr{
     }
   
     /* Projects page */
-    .project-img {
+    .card-slide-front img{
       width: 80vw;
       height: 27vh;
-      margin-bottom: 50px;
+    }
+    .project-center{
+        margin: auto;
     }
   
     /* Contact page */
@@ -687,9 +689,6 @@ hr{
     }
     .navbar{
         padding: 0 !important;
-    }
-    .container{
-        width:100vw;
     }
     .allpages{
         width: 100vw;
