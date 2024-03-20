@@ -13,20 +13,19 @@
 
 <div id="home" class="home bg-home page-section">
     <div class="container mt-4 allpages justify-content-center"> 
-        <div class="d-flex home-flex ">
-            <div class="">
+        <div class="row d-flex home-flex mx-auto ">
+            <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="text-about mb-5">
                     <h3 class="text">Hi There! I'm</h3>
                     <h1 class="overflow-hidden"><span class="education">Full-Stack Software Developer</span></h1>
                     <p class="text-color mt-2">I'm a Full-stack software Developer from the Code Institute. With expertise in HTML, CSS, JavaScript, Python, Bootstrap, Django, and much more. As a dynamic and forward-thinking programmer, I'm committed to staying up to date with the latest trends and technologies in the field.</p>
                     <div class="d-flex mb-5 mt-5">
                         <a href="lebenslauf.pdf" download="lebenslauf" class="btn cv-btn button"><i class="fa fa-download mr-2"></i>Download CV</a>
-                    
                     </div>
                 </div>
                
             </div>
-            <div class="mx-auto text-center">
+            <div class=" col-lg-4 col-md-12 col-sm-12 text-center">
                 <img src="{% static 'images/Dhvani11.jpg' %}" alt="my-image" class="img-fluid mb-3">
             </div>
         </div>
@@ -45,24 +44,27 @@
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-                <div class="d-flex about-flex mx-auto">
-                    <div>
-                        <img src="{% static 'images/Dhvani2.jpg' %}" alt="my-image" class="rounded float-start mb-3">
+                <div class="row d-flex about-flex mx-auto">
+                    <div class="col-sm-3 col-lg-3 col-md-12">
+                        <div>
+                            <img src="{% static 'images/Dhvani2.jpg' %}" alt="my-image" class="rounded float-start mb-3">
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
-                        <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
-                        <div class="row d-flex data-flex">
-                            <div class="col-md-6">
-                                <p><i class="fa fa-calendar icon"></i> Date of birth: 27 july 1998</p>
-                                <p><i class="fa fa-flag icon"></i> Freelance: Available</p>
-                                <p><i class="fa fa-location-arrow icon"></i> Address: Schelklingen, Germany</p>
-                                <p><i class="fa fa-globe icon"></i> Spoken Langages: English - German - Gujarati </p>
-                            </div>
-                            <div class="col-md-6">
-                                <p><i class="fa fa-flag icon"></i> Nationality: Indian</p>
-                                <p><i class="fa fa-phone icon"></i> Phone: +49 17934344262</p>
-                                <p><i class="fa fa-envelope icon"></i> Email: intdhvani2627@gmail.com</p>
+                        <div class="col-sm-12 col-lg-9 col-md-12">
+                            <p class="text-justify mb-4 ">Hey there! I'm Dhvani Intwala. I am originally from India and currently reside in Germany. A passionate full-stack web developer with a keen eye for crafting responsive, user-centric solutions. I thrive on turning ideas into functional, beautifully designed websites and applications. I've mastered my skills in front-end and back-end development, by learning languages like HTML5, CSS3, JavaScript, and Python as well as web design tools like Bootstrap and jQuery frameworks.</p> 
+                            <p class="text-justify mb-4">Currently, I am working as a freelance developer, specializing in front-end templates and building WordPress web applications using these frameworks. If you're looking for a dedicated developer who can bring both technical expertise and a creative touch to your projects, I'd be happy to discuss how I can contribute to your next big idea.</p>
+                            <div class="row d-flex data-flex">
+                                <div class="col-md-6">
+                                    <p><i class="fa fa-calendar icon"></i> Date of birth: 27 july 1998</p>
+                                    <p><i class="fa fa-flag icon"></i> Freelance: Available</p>
+                                    <p><i class="fa fa-location-arrow icon"></i> Address: Schelklingen, Germany</p>
+                                    <p><i class="fa fa-globe icon"></i> Spoken Langages: English - German - Gujarati </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><i class="fa fa-flag icon"></i> Nationality: Indian</p>
+                                    <p><i class="fa fa-phone icon"></i> Phone: +49 17934344262</p>
+                                    <p><i class="fa fa-envelope icon"></i> Email: intdhvani2627@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,44 +87,44 @@
             <span class="dot"></span>
         </div>
         
-        <div class="row mb-5 mt-2">
-            <div class="col-md-4 col-6 mb-4">
+        <div class="row mb-5 mt-2 mx-auto">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item html p-1">
                     <img src="{% static 'images/html.png'%}" alt="html" class="img-skill d-block mx-auto">
                     <p class="text-center">HTML</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item css p-1">
                     <img src="{% static 'images/css-3.png'%}" alt="css" class="img-skill d-block mx-auto">
                     <p class="text-center">CSS</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item js p-1">
                     <img src="{% static 'images/js.png'%}" alt="js" class="img-skill d-block mx-auto">
                     <p class="text-center">JavaScript</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item python p-1">
                     <img src="{% static 'images/python.png'%}" alt="python" class="img-skill d-block mx-auto">
                     <p class="text-center">Python</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item bootstrap p-1">
                     <img src="{% static 'images/bootstrap.png'%}" alt="bootstrap" class="img-skill d-block mx-auto">
                     <p class="text-center">Bootstrap</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item django p-1">
                     <img src="{% static 'images/Django.png'%}" alt="Django" class="img-skill d-block mx-auto">  
                     <p class="text-center">Django</p> 
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
+            <div class="col-md-4 col-6 col-lg-4 mb-4">
                 <div class="grid-item react p-1">
                     <img src="{% static 'images/react.png'%}" alt="React" class="img-skill d-block mx-auto">
                     <p class="text-center">React</p>
@@ -134,7 +136,6 @@
 
 <!-- PROJECT PAGE -->
 
-
 <div id="project" class="project bg mb-5 page-section mx-auto">
     <div class="container allpages">
         <h2 class="title mb-2">Projects</h2>
@@ -145,14 +146,16 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        <p class="mb-5 project-text">Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
-        <div class="row mb-5 mt-2">
-            <div class="col-lg-4 col-md-6 mb-4">
+        <p class="mb-5 project-text ml-3">Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
+        <div class="row mb-5 mt-2 mx-auto">
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 mb-3">
                 <div class="cards">
                     <div class="card-slide">
                         <div class="card-slide-front">
                             <a href="https://dhvani-intwala.github.io/India-Independence/" target="_blank" class="livelink">
-                                <img src="{% static 'images/Project1.jpg'%}" alt="History of india" class="project-img">
+                                <div class="d-flex justify-content-center mx-auto">
+                                    <img src="{% static 'images/Project1.jpg'%}" alt="History of india" class="project-img text-center">
+                                </div>
                             </a>
                         </div> 
                         <div class="card-slide-back">
@@ -168,7 +171,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+        
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                 <div class="cards">
                     <div class="card-slide">
                         <div class="card-slide-front">
@@ -191,7 +195,7 @@
                     </div>  
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                 <div class="cards">
                     <div class="card-slide">
                         <div class="card-slide-front">
@@ -211,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                 <div class="cards">
                     <div class="card-slide">
                         <div class="card-slide-front">
@@ -236,7 +240,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                 <div class="cards">
                     <div class="card-slide">
                         <div class="card-slide-front">
@@ -261,7 +265,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
