@@ -439,9 +439,6 @@ hr{
         overflow-x: hidden;
        
     }
-    nav{
-        position: fixed;
-    }
     /* Navbar */
     .navbar {
       padding: 10px 10px;
@@ -657,8 +654,7 @@ hr{
         width: 15vw;
         height: auto;
         margin: 10px auto;
-    }
-   
+    }  
 }
 
 
