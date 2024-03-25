@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
-if os.path.isfile('env.py'):
-    import env
+# if os.path.isfile('env.py'):
+#     import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,10 +26,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-k_rl)h*%$_vbo-hj@)%2$%hj1wzp9-_7+#m_hls0s)%y7vabbqs"
+SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = "po4u38m-5fdq$n@rn*3de^siaih4un6vxxre1+zzo-l0275yz$d"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com']
 
@@ -136,8 +139,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
