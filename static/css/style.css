@@ -147,11 +147,7 @@ ul li a{
 }
 
 /********* HOME PAGE STYLES  *******/
-/* .allpages{
-    margin: auto;
-    display: block;
-    width: 80vw;
-} */
+
 .home-flex{
     margin: auto;
 }
@@ -173,7 +169,7 @@ ul li a{
 
 
 .home{
-    padding: 10rem 8rem;
+    padding: 9rem 8rem;
 }
 
 .cv-btn{
@@ -469,9 +465,7 @@ hr{
     ul li a {
       font-size: 1rem;
     }
-    /* .allpages{
-        width: 100vw;
-    }
+
    */
     /* Home page */
     .home{
@@ -633,7 +627,12 @@ hr{
     } 
     .icon-footer {
         font-size: 1.2rem;
+
     }
+    .link .fa-lg {
+        font-size: 1.5rem;
+        margin: 0 0.5rem; 
+      }
     /* Contact page */
     #contact-form{
         width:60vw;
@@ -713,6 +712,11 @@ hr{
     }
     .project-text{
         max-width: auto;
+    }
+    .icon-footer {
+        font-size: 1rem;
+        padding: 8px;
+        margin: 8px;
     }
 
 }
