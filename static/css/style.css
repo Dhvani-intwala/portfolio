@@ -711,7 +711,7 @@ hr{
         font-size: 1.4rem;
     }
     .project-text{
-        max-width: auto;
+        width: auto;
     }
     .icon-footer {
         font-size: 1rem;
