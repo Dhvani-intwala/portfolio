@@ -96,7 +96,8 @@ header{
 }
 
 .navbar{
-    padding: 10px 140px 10px 140px;
+    overflow: hidden;
+    padding: 1rem 8rem;
 }
 
 ul li a{
@@ -146,11 +147,11 @@ ul li a{
 }
 
 /********* HOME PAGE STYLES  *******/
-.allpages{
+/* .allpages{
     margin: auto;
     display: block;
     width: 80vw;
-}
+} */
 .home-flex{
     margin: auto;
 }
@@ -172,8 +173,7 @@ ul li a{
 
 
 .home{
-    margin-top:12%;
-    margin-bottom: 8%;
+    padding: 10rem 8rem;
 }
 
 .cv-btn{
@@ -230,6 +230,10 @@ ul li a{
 
 
 /********* ABOUT PAGE STYLES  *******/
+
+.about{
+    padding: 1rem 8rem;
+}
 .rounded{
     width: 20vw;
     height: 60vh;
@@ -252,6 +256,9 @@ ul li a{
 
 /********* SKILL PAGE STYLES  *******/
 
+.skill{
+    padding: 1rem 8rem;
+}
 .img-skill{
     width: 6vw;
     height: 12vh;
@@ -293,7 +300,9 @@ ul li a{
 }
 
 /********* PROJECTS PAGE STYLES  *******/
-
+.project{
+    padding: 1rem 8rem;
+}
 .icon-img{
     width: 20px;
     height: 20px;
@@ -460,11 +469,14 @@ hr{
     ul li a {
       font-size: 1rem;
     }
-    .allpages{
+    /* .allpages{
         width: 100vw;
     }
-  
+   */
     /* Home page */
+    .home{
+        padding: 0 !important;
+    }
     .img-fluid {
       width: 70vw;
       height: 30vh;
@@ -487,6 +499,9 @@ hr{
     }
   
     /* About page */
+    .about{
+        padding: 0 !important;
+    }
     .rounded {
       width: 50vw;
       height: auto;
@@ -503,6 +518,9 @@ hr{
     }
   
     /* Skill page */
+    .skill{
+        padding: 0 !important;
+    }
     .img-skill {
       width: 15vw;
       height: auto;
@@ -511,9 +529,15 @@ hr{
 
     /* Projects page */
 
+    .project{
+        padding: 0 !important;
+    }
     .card-slide-front img{
       max-width: 100vw;
       max-height: 100vh;
+    }
+    .cards{
+        width: auto;
     }
 
     /* Contact page */
@@ -556,6 +580,18 @@ hr{
     }
     ul li a {
         font-size: 1rem;
+    }
+    .home{
+        padding: 0 !important;
+    }
+    .about{
+        padding: 0 !important;
+    }
+    .skill{
+        padding: 0 !important;
+    }
+    .project{
+        padding: 0 !important;
     }
     .project-img {
         width: 80vw;
@@ -609,6 +645,18 @@ hr{
 }
 
 @media only screen and (max-width: 992px){
+    .home{
+        padding: 0 !important;
+    }
+    .about{
+        padding: 0 !important;
+    }
+    .skill{
+        padding: 0 !important;
+    }
+    .project{
+        padding: 0 !important;
+    }
     .home-flex{
         flex-direction: column;
         flex-direction: column-reverse;
@@ -622,9 +670,9 @@ hr{
     .container{
         max-width: 100vw;
     }
-    .allpages{
+    /* .allpages{
         width: 100vw !important;
-    }
+    } */
     nav{
         position: fixed;
     }
@@ -666,6 +714,10 @@ hr{
         margin: 10px 10px;
         font-size: 1.4rem;
     }
+/* 
+    .cards{
+        width: auto;
+    } */
   
 }
 
