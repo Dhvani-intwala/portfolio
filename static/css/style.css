@@ -96,7 +96,7 @@ header{
 
 .navbar{
     overflow: hidden;
-    padding: 1rem 11rem;
+    padding: 1rem 5rem;
 }
 
 ul li a{
@@ -168,7 +168,7 @@ ul li a{
 
 
 .home{
-    padding: 8rem 10rem;
+    padding: 10rem 10rem;
 }
 
 .cv-btn{
