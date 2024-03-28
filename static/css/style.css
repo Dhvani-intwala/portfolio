@@ -91,13 +91,12 @@ header{
     background-color: #000000;
     color: #010e1d;
     height: 10%;
-    padding: 5px 5px;
     z-index: 1000;
 }
 
 .navbar{
     overflow: hidden;
-    padding: 1rem 10rem;
+    padding: 1rem 11rem;
 }
 
 ul li a{
@@ -108,7 +107,7 @@ ul li a{
 
 .logo{
     font-size: 2.2rem;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-family: 'Berkshire Swash', cursive;
     color: var(--white-color);
 }
