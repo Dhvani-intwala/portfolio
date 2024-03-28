@@ -97,7 +97,7 @@ header{
 
 .navbar{
     overflow: hidden;
-    padding: 1rem 8rem;
+    padding: 1rem 10rem;
 }
 
 ul li a{
@@ -169,7 +169,7 @@ ul li a{
 
 
 .home{
-    padding: 9rem 8rem;
+    padding: 8rem 10rem;
 }
 
 .cv-btn{
@@ -228,7 +228,7 @@ ul li a{
 /********* ABOUT PAGE STYLES  *******/
 
 .about{
-    padding: 1rem 8rem;
+    padding: 1rem 10rem;
 }
 .rounded{
     width: 18vw;
@@ -253,7 +253,7 @@ ul li a{
 /********* SKILL PAGE STYLES  *******/
 
 .skill{
-    padding: 1rem 8rem;
+    padding: 1rem 10rem;
 }
 .img-skill{
     width: 6vw;
@@ -297,7 +297,7 @@ ul li a{
 
 /********* PROJECTS PAGE STYLES  *******/
 .project{
-    padding: 1rem 8rem;
+    padding: 1rem 11rem;
 }
 .icon-img{
     width: 20px;
@@ -330,10 +330,11 @@ ul li a{
 }
 
 .cards {
-    width: 350px;
-    height: 200px;
+    width: 320px;
+    height: 180px;
     overflow: hidden;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .card-slide-back {
