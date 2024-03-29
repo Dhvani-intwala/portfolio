@@ -1,0 +1,12 @@
+Hallo {{ name }}!
+
+Thank you for reaching out to me. I have received your message and appreciate your interest.
+
+I will Contact you as soon as possible. If your message requires urgent attention, please feel free to call me at +49 17634344226.
+
+If you have any further questions or concerns, don't hesitate to reach out.
+
+Thank you again for contacting me.
+
+Best regards,
+Dhvani Intwala
