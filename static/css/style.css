@@ -155,9 +155,9 @@ ul li a{
 }
 
 .img-fluid{
-    width: 25vw;
-    height: 53vh;
-    margin-left: 80px;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 70px;
     object-fit: fill;
     border-radius: 50%;
     border: #2f2f2f 2px solid;
@@ -599,7 +599,7 @@ hr{
         flex-direction: column;
     } */
     .img-fluid {
-        width: 60vw;
+        width: 65vw;
         height: 35vh;
         margin-left: 0 !important;
     }
@@ -607,7 +607,7 @@ hr{
         margin-top:15%;
     }
     .text-about p {
-        width: 70vw;
+        width: 60vw;
     }
     .rounded {
         width: 22vw;
@@ -682,7 +682,7 @@ hr{
         margin: auto;
     }
     .img-fluid {
-        width: 50vw;
+        width: 55vw;
         height: 35vh;
         margin-top: 50px ;
         margin-left: 0 !important;
