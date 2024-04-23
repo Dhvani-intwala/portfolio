@@ -7,6 +7,7 @@ from django.conf import settings
 from django.contrib import messages
 # from home.models import ContactMessage
 
+
 # Create your views here.
 def send_confirmation_email(contact_email):
     """Send the user a confirmation email"""
@@ -30,9 +31,13 @@ def send_confirmation_email(contact_email):
 
 def send_notification_email(name, email, message):
     """Send notification email to admin"""
-    subject = 'New Contact Form Submission'
+    subject = 'New Contact form portfolio'
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
-    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [settings.ADMIN_EMAIL])
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [settings.ADMIN_EMAIL])
 
 def contact(request):
     """

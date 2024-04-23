@@ -224,7 +224,9 @@ ul li a{
 
 
 /********* ABOUT PAGE STYLES  *******/
-
+.container {
+    overflow: hidden; 
+}
 .about{
     padding: 1rem 10rem;
 }
@@ -240,7 +242,7 @@ ul li a{
 .about p{
     font-size: 1rem;
     text-align: left;
-    width: 73vw;
+    
 }
 
 .icon{
