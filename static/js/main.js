@@ -1,4 +1,5 @@
 
+const userPhoneNum = document.getElementById("");
 const nav = document.querySelector('#nav');
 
 if (window.innerWidth > 600) {
@@ -56,3 +57,7 @@ $(function(){
         navMain.collapse('hide');
     });
 });
+
+
+
+    

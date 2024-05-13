@@ -6,6 +6,7 @@ from django.conf import settings
 # from django.http import HttpResponseRedirect
 from django.contrib import messages
 # from home.models import ContactMessage
+import re
 
 
 # Create your views here.
@@ -69,3 +70,4 @@ def contact(request):
         'form': form,
     }
     return render(request, 'home/index.html', context)
+
