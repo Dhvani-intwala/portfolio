@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECRET_KEY = "po4u38m-5fdq$n@rn*3de^siaih4un6vxxre1+zzo-l0275yz$d"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com']
 
@@ -179,7 +179,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD= os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-# print("EMAIL_HOST_USER:", EMAIL_HOST_USER)
-# print("EMAIL_HOST_PASSWORD:", EMAIL_HOST_PASSWORD)
-   
