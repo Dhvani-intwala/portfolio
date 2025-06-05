@@ -103,11 +103,12 @@ header {
     overflow: hidden;
     width: 95%; 
     margin: 0 auto; 
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-right: 10px; */
     border: solid #fffdfd 2px;
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -120,9 +121,9 @@ ul.navbar-nav {
     padding-left: 0;
 }
 
-ul li {
+/* ul li {
     margin: 0 10px;
-}
+} */
 
 ul li a {
     font-size: 1.1rem;
@@ -149,6 +150,18 @@ ul li a {
 
 .nav-link:hover {
     color: var(--pink-color); /* Fixed typo */
+}
+
+.btn-dark {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 15px;
+  /* border: none; */
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .title {
@@ -190,19 +203,24 @@ ul li a {
     padding: 10rem 10rem;
 }
 
+.contact-h-btn{
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 40%;
+    border: var(--black-color) 2px solid;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+
 .cv-btn{
     color: var(--black-color);
     font-weight: 600;
     font-size: 1.1rem;
     width: 40%;
-    border: var(--white-color) 2px solid;
+    border: var(--black-color) 2px solid;
     padding: 10px 5px 10px 5px;
     text-align: center;
-}
-.cv-btn:hover{
-    color: var(--pink--color);
-    text-decoration: none;
-    border: var(--pink--color) 2px solid;
 }
 
 
@@ -238,23 +256,23 @@ ul li a {
 }
 
 .icon{
-    color: var(--pink--color);
+    color: var(--black--color);
 }
 
 /********* SKILL PAGE STYLES  *******/
 
 .skill{
-    padding: 1rem 10rem;
+    padding: 1rem 2rem;
 }
 .img-skill{
-    width: 6vw;
-    height: 12vh;
+    width: 100%;
+    height: 90%;
     margin: 10px 10px;
 }
 
 .grid-item{
     box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px;
-    width: 95%;
+    width: 10%;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -383,11 +401,6 @@ ul li a {
     padding: 5px 5px 5px 5px;
     width: 15vw;
     text-align: center;
-}
-
-.contact-btn:hover{
-    color: var(--pink--color);
-    border: var(--pink--color) 2px solid;
 }
 
 .error{
