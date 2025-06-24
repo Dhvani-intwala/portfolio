@@ -187,7 +187,7 @@ ul li a {
 
 .img-fluid{
     width: 50vw;
-    height: 50vh;
+    height:55vh;
     margin-left: 70px;
     object-fit: fill;
     /* border-radius: 50%; */
@@ -201,7 +201,7 @@ ul li a {
 
 
 .home{
-    padding: 10rem 8rem;
+    padding: 10rem 4rem;
 }
 
 .contact-h-btn{
@@ -239,7 +239,7 @@ ul li a {
     overflow: hidden; 
 }
 .about{
-    padding: 1rem 8rem;
+    padding: 1rem 4rem;
 }
 .rounded{
     width: 18vw;
@@ -263,7 +263,7 @@ ul li a {
 /********* SKILL PAGE STYLES  *******/
 
 .skill{
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
 }
 .img-skill{
     width: 100%;
@@ -307,7 +307,7 @@ ul li a {
 
 /********* PROJECTS PAGE STYLES  *******/
 .project{
-    padding: 1rem 8rem;
+    padding: 1rem 4rem;
 }
 .icon-img{
     width: 20px;
@@ -376,6 +376,10 @@ ul li a {
 
 
 /********* CONTACT PAGE STYLES  *******/
+
+.contact{
+    padding: 1rem 4rem;
+}
 
 #contact-form{
     width: 30vw;
