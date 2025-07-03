@@ -112,6 +112,18 @@
           </div>
         </div>
       </div>
+      <!-- Service Card 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow border-0">
+          <div class="card-body">
+            <i class="fas fa-sync-alt fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Website Redesign & Optimization</h5>
+            <p class="card-text">
+             Modernize and speed up your current website for better performance and UX.
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -119,63 +131,71 @@
 
 
 <!-- Skills page -->
-<div id="skill" class="skill bg mb-5 page-section ">
-    <div class="container-fluid">
+<div id="skill" class="skill page-section">
+  <div class="container-fluid">
         <h2 class="title">Skills</h2>
         <p class="">My creative skills & experiences.</p>
-        <div class="text-center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+
         
-        <div class="row mb-5 mt-2">
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item html p-1">
-                    <img src="{% static 'images/html.png'%}" alt="html" class="img-skill d-block mx-auto">
-                    <p class="">HTML</p>
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/html.png' %}" alt="HTML" class="img-skill mb-2">
+                <p class="mb-0">HTML</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item css p-1">
-                    <img src="{% static 'images/css-3.png'%}" alt="css" class="img-skill d-block mx-auto">
-                    <p class="text-center">CSS</p>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/css-3.png' %}" alt="CSS" class="img-skill mb-2">
+                <p class="mb-0">CSS</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item js p-1">
-                    <img src="{% static 'images/js.png'%}" alt="js" class="img-skill d-block mx-auto">
-                    <p class="text-center">JavaScript</p>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/js.png' %}" alt="JavaScript" class="img-skill mb-2">
+                <p class="mb-0">JavaScript</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item python p-1">
-                    <img src="{% static 'images/python.png'%}" alt="python" class="img-skill d-block mx-auto">
-                    <p class="text-center">Python</p>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/python.png' %}" alt="Python" class="img-skill mb-2">
+                <p class="mb-0">Python</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item bootstrap p-1">
-                    <img src="{% static 'images/bootstrap.png'%}" alt="bootstrap" class="img-skill d-block mx-auto">
-                    <p class="text-center">Bootstrap</p>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/bootstrap.png' %}" alt="Bootstrap" class="img-skill mb-2">
+                <p class="mb-0">Bootstrap</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item django p-1">
-                    <img src="{% static 'images/Django.png'%}" alt="Django" class="img-skill d-block mx-auto">  
-                    <p class="text-center">Django</p> 
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/Django.png' %}" alt="Django" class="img-skill mb-2">
+                <p class="mb-0">Django</p>
                 </div>
             </div>
-            <div class="col-md-4 col-6 mb-4">
-                <div class="grid-item react p-1">
-                    <img src="{% static 'images/react.png'%}" alt="React" class="img-skill d-block mx-auto">
-                    <p class="text-center">React</p>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="text-center p-4 border shadow-sm bg-white">
+                <img src="{% static 'images/react.png' %}" alt="React" class="img-skill mb-2">
+                <p class="mb-0">React</p>
                 </div>
             </div>
+            </div>
+
+
+        
         </div>
-    </div>
+  </div>
 </div>
+
+    
+
 
 <!-- PROJECT PAGE -->
 
@@ -313,7 +333,7 @@
 
 
 <!-- CONTACT PAGE -->
-<div class="container-fluid contact mb-5 page-section" id="contact">
+<div class="container-fluid contact mb-5 page-section bg-contact" id="contact">
     <h2 class="title mb-2">Get in touch</h2>
     <p class="">Submit the form below to get in touch with me</p>
     <div class="text-center">
@@ -331,7 +351,7 @@
         <div class="error-container">
             <small class="error"></small>
         </div>
-        <button class="btn contact-btn button center" type="submit">Contact Now</button>
+        <button class="btn contact-btn button text-center" type="submit">Contact Now</button>
         
     </form>   
 </div>

@@ -270,44 +270,11 @@ ul li a {
     padding: 1rem 4rem;
 }
 .img-skill{
-    width: 100%;
-    height: 90%;
-    margin: 10px 10px;
+    float: left;
+    width: 15%;
+    height: 15%;
 }
 
-.grid-item{
-    box-shadow: rgb(38, 57, 77) 0px 5px 5px 2px;
-    width: 10%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.html{
-    box-shadow: rgb(229, 72, 24) 0px 5px 5px 2px;
-}
-
-.css{
-    box-shadow: rgb(56, 133, 215) 0px 5px 5px 2px;
-}
-
-.js{
-    box-shadow: rgb(238, 190, 33) 0px 5px 5px 2px;
-}
-
-.python{
-    box-shadow: rgb(37, 106, 123) 0px 5px 5px 2px;
-}
-
-.bootstrap{
-    box-shadow: rgb(145, 33, 237) 0px 5px 5px 2px;
-}
-
-.django{
-    box-shadow: rgb(27, 58, 41) 0px 5px 5px 2px;
-}
-.react{
-    box-shadow: rgb(79, 152, 230) 0px 5px 5px 2px;
-}
 
 /********* PROJECTS PAGE STYLES  *******/
 .project{
@@ -387,17 +354,20 @@ ul li a {
 
 #contact-form{
     width: 30vw;
-    margin: auto;
 }
 
 .rounded-3{
     border-radius: 8px;
 }
 
-.center{
+.bg-contact{
+    background-color: #f6ebd5;
+}
+
+/* .center{
     margin: auto;
     display: block;
-}
+} */
 
 .contact-form-input{
     background-color: #fcf7f7;
@@ -410,6 +380,7 @@ ul li a {
     padding: 5px 5px 5px 5px;
     width: 15vw;
     text-align: center;
+    
 }
 
 .error{
