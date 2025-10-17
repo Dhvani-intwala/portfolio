@@ -42,7 +42,7 @@
 </div>
 
 <!-- About page -->
-<div id="about" class="about bg mb-5 page-section">
+<!-- <div id="about" class="about bg mb-5 page-section">
     <div class="container-fluid">
         <div>
             <div>
@@ -76,7 +76,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Services -->
 <div id="services" class="services py-5 page-section">
@@ -333,28 +333,72 @@
 
 
 <!-- CONTACT PAGE -->
+
+
+{% load crispy_forms_tags %}
 <div class="container-fluid contact mb-5 page-section bg-contact" id="contact">
-    <h2 class="title mb-2">Get in touch</h2>
-    <p class="">Submit the form below to get in touch with me</p>
-    <div class="text-center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-    {% load crispy_forms_tags %}
-    <form action="{% url 'home' %}"  method="POST" id="contact-form">
-        {% csrf_token %}
-        {{ form|crispy }}
+    <div class="row">
         
-        <input type="hidden" name="scroll_position" id="scroll_position" value="0">
-        <div class="error-container">
-            <small class="error"></small>
+        <div class="col-lg-6 mb-4">
+           <h2 class="title mb-2">Let's Discuss Project</h2>
+            <p class="">Looking for someone to sprinkle creativity on your projects?<br>
+            I am here your friendly neighborhood Product Developer</p>
+
+            <form action="{% url 'home' %}" method="POST" class="border border-dark p-4 bg-white">
+                {% csrf_token %}
+                {{ form|crispy }}
+
+                <input type="hidden" name="scroll_position" id="scroll_position" value="0">
+
+                <div class="error-container mb-3">
+                    <small class="error text-danger"></small>
+                </div>
+
+                <button type="submit" class="contact-btn text-center"> Contact now </button>
+            </form>
         </div>
-        <button class="btn contact-btn button text-center" type="submit">Contact Now</button>
-        
-    </form>   
+
+        <!-- Right: Contact Info -->
+       
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+            <ul class="list-unstyled contact-info">
+                <li class="d-flex align-items-start mb-4">
+                    <div class="icon-circle mb-2">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="ms-3 w-100">
+                        <small class="text-muted">Phone</small>
+                        <p class="fw-bold mb-1">+49 179 4133118</p>
+                        <hr class="contact-hr">
+                    </div>
+                </li>
+                <li class="d-flex align-items-start mb-4">
+                    <div class="icon-circle mb-2">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="ms-3 w-100">
+                        <small class="text-muted">Mail</small>
+                        <p class="fw-bold mb-1">intdhvani2627@gmail.com</p>
+                        <hr class="contact-hr mx-auto">
+                    </div>
+                </li>
+                <li class="d-flex align-items-start">
+                    <div class="icon-circle mb-2">
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="ms-3">
+                        <small class="text-muted">Reach Us</small>
+                        <p class="fw-bold mb-0">Schelklingen, Deutschland</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    
 </div>
+
 
 
 {% endblock %}
