@@ -16,14 +16,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-ADMIN_EMAIL = settings.EMAIL_HOST_USER
+ADMIN_EMAIL = os.environ.get('EMAIL_HOST_USER')
 # if os.path.isfile('env.py'):
 #     import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -33,9 +32,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECRET_KEY = "po4u38m-5fdq$n@rn*3de^siaih4un6vxxre1+zzo-l0275yz$d"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com', '*.vercel.app',
+    'dhvaniintwala.com',]   
 
 
 # Application definition

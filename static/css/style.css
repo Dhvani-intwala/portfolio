@@ -431,19 +431,14 @@ footer{
 
 .icon-footer{
     border: #ffffff 2px solid;
-    padding: 15px;
+    padding: 2px;
     border-radius: 50%;
-    margin: 15px;
+    margin: 5px;
     display: inline-block;
 }
 
 .footer-link:hover .icon-footer {
     transform: scale(1.1);
-}
-
-.footer-link:hover .icon-footer:hover {
-    background-color: var(--black-color);
-    border: var(--pink--color) 2px solid;
 }
 
 hr{
