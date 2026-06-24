@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com', '*.vercel.app',
+ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com', '.onrender.com',
     'dhvaniintwala.com',]   
 
 

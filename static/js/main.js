@@ -59,5 +59,18 @@ $(function(){
 });
 
 
+// Hides the scroll up button at top.
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.scroll-top').fadeIn();
+     }
+    else
+     {
+      $('.scroll-top').fadeOut();
+     }
+ });
+
 
     
