@@ -35,7 +35,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['127.0.0.1' , 'dhvani-intwala-portfolio-7e446227945f.herokuapp.com', '.onrender.com',
-    'dhvaniintwala.com',]   
+    'dhvaniintwala.com','www.dhvaniintwala.com']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://dhvaniintwala.com',
+    'https://www.dhvaniintwala.com',
+    'https://*.onrender.com',
+]
 
 
 # Application definition
